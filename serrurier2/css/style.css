@@ -48,11 +48,12 @@ body{
     overflow: hidden;
     height:100%;
     /* margin-top: 80px; */
-    background: url(../images/serrurier0.jpg) center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(../images/serrurier0.jpg);
+    background-size: 100% 100%;
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    /* background-size: cover; */
 }
 .headerLine:after{
     content: "";
