@@ -1051,9 +1051,17 @@ if(isset($_POST['submit'])){
 					<form id="contact-form">
 						<input id="contact-name" type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Nom *' />
 						<input id="contact-email" type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='votre mail *' />
+						<input id="contact-phone" type="tel" class="col-md-12 col-xs-12 Subject" name='Phone' placeholder='votre tel *' />
+						
 						<input id="contact-subject" type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Sujet de votre demande'
 						/>
 						<textarea id="contact-message" type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Message de votre demande *'></textarea>
+						<div class="col-md-12">
+							<div class="form-group">
+								<!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
+								<div class="g-recaptcha" data-sitekey="6Ld2tkcUAAAAAPAQlAVohlcLXQNkQm_njGEElNA8"></div>
+							</div>
+						</div>
 						<div class="cBtn col-xs-12">
 							<ul>
 								<li class="clear">
@@ -1348,6 +1356,9 @@ if(isset($_POST['submit'])){
 		});
 	</script>
 
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="validator.js"></script>
+	
 	<script type="text/javascript">
 		$(function () {
 			// $('.articles li').click(function () {
@@ -1384,8 +1395,10 @@ if(isset($_POST['submit'])){
 			// });
 
 			$('.sent').hide();
+			
+			$('#contact-submit').validator();
 			$('#contact-submit').click(function () {
-
+				var recaptcha = $("#g-recaptcha-response").val();
 				var subject = $('#contact-subject').val();
 				var message = 'My name is: ' + $('#contact-name').val() +
 					'\nMy Email: ' + $('#contact-email').val() +
@@ -1394,7 +1407,8 @@ if(isset($_POST['submit'])){
 
 				var data = {
 					"subject": subject,
-					"body": message
+					"body": message,
+					"g-recaptcha-response": recaptcha
 				};
 
 				$.ajax({
@@ -1419,6 +1433,7 @@ if(isset($_POST['submit'])){
 			});
 		});
 	</script>
+			
 </body>
 
 </html>
