@@ -22,10 +22,21 @@ h1, h2, h3, h4, h5 {
   color: #000;
 }
 
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
 .btn, .form-control {
   outline: none;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
+}
+
+.btn-construct{
+  white-space: normal !important;
 }
 
 .btn.btn-primary {
