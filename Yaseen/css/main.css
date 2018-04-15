@@ -1922,7 +1922,7 @@ nav a:hover {
 
 body {
   background-attachment: fixed;
-  background-image: url("../img/banner-bg.jpg");
+  background-image: url("../img/banniere.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2114,7 +2114,7 @@ body:after {
 }
 
 .hero-area {
-  background: url(../img/banner-bg.jpg) no-repeat center/contain;
+  background: url(../img/banniere.jpg) no-repeat center/contain;
   background-size: cover;
 }
 

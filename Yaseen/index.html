@@ -6,15 +6,36 @@
 	<!-- Favicon-->
 	<link rel="shortcut icon" href="img/fav.png">
 	<!-- Author Meta -->
-	<meta name="author" content="Colorlib">
-	<!-- Meta Description -->
-	<meta name="description" content="">
+	<meta name="author" content="Aisraeli">
 	<!-- Meta Keyword -->
 	<meta name="keywords" content="">
-	<!-- meta character set -->
-	<meta charset="UTF-8">
-	<!-- Site Title -->
-	<title>Yaseen</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>${title}</title>
+
+    <meta charset="utf-8">
+
+		<meta name="dcterms.creator" content="${mainUrl}">
+		<meta name="dcterms.subject" content="${Type}">
+		<meta name="dcterms.description" content="${ville}">
+		<meta name="description" content="${description}">
+		<meta name="geo.region" content="${regionId}">
+		<meta name="dcterms.title" content="${title}">
+		<meta name="geo.placename" content="${ville}">
+		<meta name="geo.position" content="${latitude};${longitude}">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,100" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500,600" rel="stylesheet">
 		<!--
@@ -35,13 +56,13 @@
 						<div class="header-wrap">
 							<div class="header-top d-flex justify-content-between align-items-center">
 								<div class="logo">
-									<a href="index.html"><img src="img/logo.png" alt=""></a>
+									<a href="index.html">${MainType}</a>
 								</div>
 								<div class="main-menubar d-flex align-items-center">
 									<nav class="hide">
-										<a href="index.html">Home</a>
-										<a href="generic.html">Generic</a>
-										<a href="elements.html">Elements</a>
+										<a href="${ILINK1}">${ITEXT1}</a>
+										<a href="${ILINK2}">${ITEXT2}</a>
+										<a href="${ILINK3}">${ITEXT3}</a>
 									</nav>
 									<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 								</div>
@@ -55,11 +76,11 @@
 						<div class="row height align-items-center justify-content-center">
 							<div class="col-lg-7">
 								<div class="banner-content text-center">
-									<h1 class="text-uppercase text-white"><span>Yaseen</span> <br> What else do you need?</h1>
+									<h1 class="text-uppercase text-white"><span>${MainType}</span> <br>${title1}</h1>
 									<p class="text-white p-2 mb-30">
-										inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women.
+										${desc1}
 									</p>
-
+									<p><a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a></p>
 								</div>
 							</div>
 						</div>
@@ -80,13 +101,14 @@
 							<span class="lnr lnr-sun"></span>
 							<h1 class="text-uppercase">
 
-								<span>Visually</span> <br>
-								clean & Perfect
+								<span>${title2}</span> <br>
+								${title3}
 							</h1>
 							<p>
-								Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.
+								${desc2}
 							</p>
-							<a class="learn-btn text-uppercase" href="#">Learn Details</a>
+							<p><a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a></p>
+							<a class="learn-btn text-uppercase" href="#">En savoir plus</a>
 						</div>
 					</div>
 				</div>
@@ -99,49 +121,50 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-6 d-flex flex-row">
 							<div class="single-feature">
-								<h2 class="text-uppercase">Multiple Layouts</h2>
+								<h2 class="text-uppercase">${title4}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization.
+									${desc4}
 								</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 d-flex flex-row">
 							<div class="single-feature">
-								<h2 class="text-uppercase">Endless Features</h2>
+								<h2 class="text-uppercase">${title5}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization.
+									${desc5}
 								</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 d-flex flex-row">
 							<div class="single-feature">
-								<h2 class="text-uppercase">Responsive View</h2>
+								<h2 class="text-uppercase">${title6}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization.
+									${desc6}
 								</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 d-flex flex-row">
 							<div class="single-feature">
-								<h2 class="text-uppercase">Clean Coding</h2>
+								<h2 class="text-uppercase">${title7}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization.
+									${desc7}
 								</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 d-flex flex-row">
 							<div class="single-feature">
-								<h2 class="text-uppercase">Fully Customizables</h2>
+								<h2 class="text-uppercase">${title8}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization.
+									${desc8}
 								</p>
+								<p><a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a></p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 d-flex flex-row">
 							<div class="single-feature">
-								<h2 class="text-uppercase">Flexible Design</h2>
+								<h2 class="text-uppercase">${title9}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization.
+									${desc9}
 								</p>
 							</div>
 						</div>
@@ -156,19 +179,19 @@
 					<div class="row">
 						<div class="col-lg-3 col-md-6 single-fact">
 							<h2 class="counter">2536</h2>
-							<p class="text-uppercase">New Followers</p>
+							<p class="text-uppercase">Nouveaux adeptes</p>
 						</div>
 						<div class="col-lg-3 col-md-6 single-fact">
 							<h2 class="counter">6785</h2>
-							<p class="text-uppercase">Site Visitors</p>
+							<p class="text-uppercase">Visiteurs du site</p>
 						</div>
 						<div class="col-lg-3 col-md-6 single-fact">
-							<h2 class="counter">1059</h2>
-							<p class="text-uppercase">Online now</p>
+							<h2 class="counter">75</h2>
+							<p class="text-uppercase">Maintenant en ligne</p>
 						</div>
 						<div class="col-lg-3 col-md-6 single-fact">
-							<h2 class="counter">2239</h2>
-							<p class="text-uppercase">New Customers</p>
+							<h2 class="counter">1139</h2>
+							<p class="text-uppercase">Nouveaux clients</p>
 						</div>
 					</div>
 				</div>
@@ -182,31 +205,31 @@
 						<div class="col-md-4 single-service">
 							<img class="d-block mx-auto img-fluid" src="img/s1.jpg" alt="">
 							<div class="desc">
-								<h2 class="text-uppercase">The Important of food</h2>
+								<h2 class="text-uppercase">${title10}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization. Societies globalization. Societies and the power of globalization. Societies globalization. Societies.
+									${desc10}
 								</p>
-								<a class="text-uppercase view-details" href="#">View Details</a>
+								<a class="text-uppercase view-details" href="#">Voir les détails</a>
 							</div>
 						</div>
 						<div class="col-md-4 single-service">
 							<div class="desc">
-								<h2 class="text-uppercase">To Hire A Personal Chef</h2>
+								<h2 class="text-uppercase">${title11}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization. Societies.
+									${desc11}
 								</p>
-								<a class="text-uppercase view-details" href="#">View Details</a>
+								<a class="text-uppercase view-details" href="#">Voir les détails</a>
 							</div>
 							<img class="d-block mx-auto img-fluid" src="img/s2.jpg" alt="">
 						</div>
 						<div class="col-md-4 single-service">
 							<img class="d-block mx-auto img-fluid" src="img/s3.jpg" alt="">
 							<div class="desc">
-								<h2 class="text-uppercase">Thrill Friends And Family</h2>
+								<h2 class="text-uppercase">${title12}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization. Societies.
+									${desc12}
 								</p>
-								<a class="text-uppercase view-details" href="#">View Details</a>
+								<a class="text-uppercase view-details" href="#">Voir les détails</a>
 							</div>
 						</div>
 					</div>
@@ -223,9 +246,9 @@
 								<h1>01</h1>
 							</div>
 							<div class="desc">
-								<h2 class="text-uppercase">responsive View</h2>
+								<h2 class="text-uppercase">${title13}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization.
+									${desc13}
 								</p>
 							</div>
 						</div>
@@ -234,9 +257,9 @@
 								<h1>02</h1>
 							</div>
 							<div class="desc">
-								<h2 class="text-uppercase">Multiple Layouts</h2>
+								<h2 class="text-uppercase">${title14}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization.
+									${desc14}
 								</p>
 							</div>
 						</div>
@@ -245,9 +268,9 @@
 								<h1>03</h1>
 							</div>
 							<div class="desc">
-								<h2 class="text-uppercase">Flexible Design</h2>
+								<h2 class="text-uppercase">${title15}</h2>
 								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization.
+									${desc15}
 								</p>
 							</div>
 						</div>
@@ -261,21 +284,22 @@
 					<div class="row justify-content-center">
 						<div class="col-lg-8">
 							<div class="section-title text-center">
-								<h3 class="text-uppercase text-white"><span>Subscribe</span> <br>
-								for our Newsletter</h3>
-								<span class="text-white">We won’t send any kind of spam</span>
+								<p><a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a></p>
+								<h3 class="text-uppercase text-white"><span>Souscrire</span> <br>
+								Pour notre newsletter</h3>
+								<span class="text-white">Nous n'enverrons aucun type de spam</span>
 							</div>
 						</div>
 					</div>
 					<div class="row justify-content-center">
 						<div class="col-lg-6">
 							<div id="mc_embed_signup">
-								<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative">
-									<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>
+								<form target="_blank" novalidate  class="subscription relative"> <!-- action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" -->
+									<input type="email" name="EMAIL" placeholder="Adresse e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>
 									<div style="position: absolute; left: -5000px;">
 										<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
 									</div>
-									<button class="primary-btn hover d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></button>
+									<button class="primary-btn hover d-inline-flex align-items-center"><span class="mr-10">Commencer</span><span class="lnr lnr-arrow-right"></span></button>
 									<div class="info"></div>
 								</form>
 							</div>
@@ -290,13 +314,13 @@
 					<div class="row d-flex justify-content-center">
 						<ul class="footer-menu">
 							<li>
-								<a href="index.html">Home</a>
+								<a href="${ILINK1}">${ITEXT1}</a>
 							</li>
 							<li>
-								<a href="generic.html">Generic</a>
+								<a href="${ILINK2}">${ITEXT2}</a>
 							</li>
 							<li>
-								<a href="elements.html">Elements</a>
+								<a href="${ILINK3}">${ITEXT3}</a>
 							</li>
 						</ul>
 					</div>
@@ -309,7 +333,7 @@
 							</div>
 							<div class="footer-content">
 								<div class="text-center">
-									Copyright © 2018 All rights reserved   |   This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a>
+            					<p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="tel:${tel.}" title="${ville} ${type} ${tel.}">${tel.}</a></p>
 							</div>
 						</div>
 					</footer>
