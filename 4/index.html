@@ -1,0 +1,1406 @@
+<!-- <?php 
+if(isset($_POST['submit'])){
+    $to = "aviel829@gmail.com"; // this is your Email address
+    $from = $_POST['Email']; // this is the sender's Email address
+    $first_name = $_POST['name'];
+    $subject = $_POST['Subject'];
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['Message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>✅ VOTRE SERRURIER &#9742;: 09 72 50 19 99 le bon prestataire chez vous a domicile pour vos travaux de serrurerie</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel='stylesheet' id='camera-css' href='css/camera.css' type='text/css' media='all'>
+
+	<link rel="stylesheet" type="text/css" href="css/slicknav.css">
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8"
+	/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/camera.min.js"></script>
+	<script type="text/javascript" src="js/myscript.js"></script>
+	<script src="js/sorting.js" type="text/javascript"></script>
+	<script src="js/jquery.isotope.js" type="text/javascript"></script>
+	<!--script type="text/javascript" src="js/jquery.nav.js"></script-->
+
+
+	<script>
+		jQuery(function () {
+			jQuery('#camera_wrap_1').camera({
+				transPeriod: 500,
+				time: 3000,
+				height: '490px',
+				thumbnails: false,
+				pagination: true,
+				playPause: false,
+				loader: false,
+				navigation: false,
+				hover: false
+			});
+		});
+	</script>
+
+
+
+	<!-- Google Maps Api -->
+	<style>
+		html,
+		body,
+		#map-canvas {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px
+		}
+	</style>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script>
+		//global variables 
+		var geocoder;
+		var map;
+		var Ireland = "Paris";
+
+		function initialize() {
+			geocoder = new google.maps.Geocoder();
+			var latlng = new google.maps.LatLng(48.864716, 2.349014);
+			var mapOptions =
+				{
+					zoom: 8,
+					center: latlng
+				}
+			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+			codeAddress(Ireland);//call the function
+		}
+
+		function codeAddress(address) {
+			geocoder.geocode({ address: address }, function (results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					map.setCenter(results[0].geometry.location);//center the map over the result
+					//place a marker at the location
+					var marker = new google.maps.Marker(
+						{
+							map: map,
+							position: results[0].geometry.location
+						});
+				} else {
+					alert('Geocode was not successful for the following reason: ' + status);
+				}
+			});
+		}
+
+		function codeAddress() {
+			var address = document.getElementById("Ireland").value;
+			geocoder.geocode({ "Ireland": address }, function (results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					map.setCenter(results[0].geometry.location);//center the map over the result
+					//place a marker at the location
+					var marker = new google.maps.Marker(
+						{
+							map: map,
+							position: results[0].geometry.location
+						});
+				} else {
+					alert('Geocode was not successful for the following reason: ' + status);
+				}
+			});
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+	</script>
+</head>
+
+<body>
+
+	<!--home start-->
+
+	<div id="home" class="row">
+		<div class="headerLine">
+			<div class="fixed transbg">
+				<div class="container">
+					<div class="row">
+						<div class="logo col-md-2">
+							<div>
+								<a href="#">
+									<img src="images/logo.jpg">
+								</a>
+							</div>
+						</div>
+						<div class="telmenu col-md-4">
+							<a href="tel:+33972501999">&#9742;: 09 72 50 19 99</a>
+						</div>
+						<div class="col-md-6">
+							<div class="navmenu" style="text-align: center;">
+								<ul id="menu">
+									<!--<li class="bigactive" >09 72 50 19 99</li>-->
+									<li class="active">
+										<a href="#home">Accueil</a>
+									</li>
+									<li>
+										<a href="#about">Notre métier</a>
+									</li>
+									<li>
+										<a href="#project">Nos préstations</a>
+									</li>
+									<li>
+										<a href="#news">Les nouveautés</a>
+									</li>
+									<li class="last">
+										<a href="#contact">Contactez-nous</a>
+									</li>
+									<!--li><a href="#features">Features</a></li-->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row wrap">
+					<div class="col-md-12 gallery">
+						<div class="camera_wrap camera_white_skin" id="camera_wrap_1">
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2 class="col-xs-12">
+										<img src="images/TELicon.png">
+										<a href="tel:+33972501999">09 72 50 19 99</a>
+									</h2>
+									<div>
+										<a href="#">
+
+										</a>
+									</div>
+								</div>
+							</div>
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2>
+										<img src="images/TELicon.png">
+										<a href="tel:+33972501999">09 72 50 19 99</a>
+									</h2>
+								</div>
+							</div>
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2>
+										<img src="images/TELicon.png">
+										<a href="tel:+33972501999">09 72 50 19 99</a>
+									</h2>
+								</div>
+							</div>
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2>
+										<img src="images/TELicon.png">
+										<a href="tel:+33972501999">09 72 50 19 99</a>
+									</h2>
+								</div>
+							</div>
+						</div>
+						<!-- #camera_wrap_1 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 project">
+					<h3 id="counter">0</h3>
+					<h4>Installations en 2017</h4>
+					<p>Nous avons été sollicités pour des installations en serrurerie, porte blindée, coffre fort, volet roulants, rideaux
+						métalliques ... </p>
+				</div>
+				<div class="col-md-4 project">
+					<h3 id="counter1">0</h3>
+					<h4>Dépannages en 2017</h4>
+					<p>Victime de notre sucée dans le domaine du dépannage rapide en moins de 30 minutes, nous avons été appeler en urgence
+						pour des ouverture de porte, changer un cylindre suite a vol de clef, débloqué un rideau de magasin, un volet à réparer
+						etc… </p>
+				</div>
+				<div class="col-md-4 project">
+					<h3 id="counter2" style="margin-left: 20px;">0</h3>
+					<h4 style="margin-left: 20px;">Contrats d'entretien de Magasins en 2017</h4>
+					<p>Vous avez un ou plusieurs magasins, nous s'occupons d'entretenir vos fermetures toutes l'année, contactez-nous pour
+						un contrat d'entretien annuel. </p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 cBusiness">
+					<h3>Votre Serrurier s'occupe de toutes vos fermetures de A à Z, c'est note métier !</h3>
+					<h4>Les meilleurs serruriers à votre dispositions jours comme de nuits et même le Week-end, nous avons mis en place un service
+						d'astreinte pour que jamais ne vous restez bloqué à votre porte, ou bien sans pouvoir fermer votre porte, ou de même
+						ouvrir votre coffre-fort car vous devez partir en vacances et vos passeports sans à l’intérieur du coffre.</h4>
+					<br/>
+					<h3>TRANSPARENCE DES PRIX | DEVIS GRATUIT AVANT TRAVAUX SANS ENGAGEMENT</h3>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 centPic">
+					<img class="img-responsive" src="images/serrurier32.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--about start-->
+
+	<div id="about">
+		<div class="line2">
+			<div class="container">
+				<div class="row Fresh">
+					<div class="col-md-4 Des">
+						<i class="fa fa-heart"></i>
+						<h4>Plus qu’un métier, une passion !</h4>
+						<p>Nos serruriers aiment leurs métiers et c'est le 1er critère de notre sélection. </p>
+					</div>
+					<div class="col-md-4 Ver">
+						<i class="fa fa-cog"></i>
+						<h4>Vehicule avec stock de serrures</h4>
+						<p>Le logiciel de gestion de stock facilite le travail de nos serruriers, cela permet de visualisez la quantités, et la
+							disponibilité de nos produits. </p>
+					</div>
+					<div class="col-md-4 Fully">
+						<i class="fa fa-tablet"></i>
+						<h4>Géolocalisation de nos serruriers</h4>
+						<p>"La géolocalisation aide nos serruriers à optimiser leur service client en suivant différents paramètres : le dispatch
+							des urgences ou le replay des journées de travail…"</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 wwa">
+					<span name="about"></span>
+					<h3>Que pensent nos clients ?</h3>
+					<h4>Quelques avis des derniers clients qui ont laisser leurs avis sur notre prestation :</h4>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row team">
+				<div class="col-md-4 b1">
+					<img class="img-responsive" src="images/picTeam/serrurier11.png">
+					<h4>Tom S.</h4>
+					<h5>Société Charles</h5>
+					<p>Bon rapport qualité Prix
+						<br/>j'ai négocier un contrat d'entretien de mes 3 bureaux, du coups je m'inquiete plus de trouver un serrurier qui peut
+						etre pouras intervenir le jours ou j'en ai vraiment besoin</p>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-pinterest"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-google-plus-square"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="col-md-4">
+					<img class="img-responsive" src="images/picTeam/serrurier12.png">
+					<h4>Pierre D.</h4>
+					<h5>Project Manager</h5>
+					<p>Note 8,5/10 c'est presque parfait
+						<br/> il me manqué juste que le serrurier soit pas en retard de 10 minutes après l'heure fix du rendez-vous et j'aurais
+						donné 9,5/10 car tout le reste c'est super bien passer, bon conseil, tarif annoncé avant de faire les travaux, travail
+						fini et nettoyage, facture informatique faite sur place reçue en PDF par mail, vraiment rien à ajouter, bon service.</p>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-pinterest"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-google-plus-square"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="col-md-4 b3">
+					<img class="img-responsive" src="images/picTeam/serrurier13.png">
+					<h4>Laura M.</h4>
+					<h5>Agence de decoration</h5>
+					<p>Satisfaite de la rapidité et du resultat,
+						<br/> Le rideau de fer de mon magasin était bloqué, en moins de 30 minutes 2 de leurs techniciens sont arrivée bien équiper,
+						15 minutes après j'ai pu donc ouvrir mon magasin et recevoir mes clients, le prix était correct d’après mes connaissances,
+						dommage que je ne les ai pas connues avant. </p>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-pinterest"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-google-plus-square"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 hr1">
+					<hr/>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 bar">
+					<div class="progB chart" data-percent="83" data-animate="3500">
+						<div class="chart chart-content">
+							<div class="percentage" data-percent="83">
+								<span class="percent">83</span>
+							</div>
+						</div>
+					</div>
+					<div class="textP">
+						<h3>Clients fidèles satisfait</h3>
+						<p>Des clients satisfaits
+							<br/>et qui nous ont rappeler pour un/ou plusieurs autres services. </p>
+					</div>
+				</div>
+				<div class="col-md-3 bar">
+					<div class="progB chart" data-percent="5" data-animate="3500">
+						<div class="chart chart-content">
+							<div class="percentage" data-percent="5">
+								<span class="percent">5</span>
+							</div>
+						</div>
+					</div>
+					<div class="textP">
+						<h3>Clients pas satisfait</h3>
+						<p>Des clients pas satisfait
+							<br/>et qui disent qu ils nous rappelerons jamais. </p>
+					</div>
+				</div>
+				<div class="col-md-3 bar ">
+					<div class="progB chart" data-percent="88" data-animate="3500">
+						<div class="chart chart-content">
+							<div class="percentage" data-percent="88">
+								<span class="percent">88</span>
+							</div>
+						</div>
+					</div>
+					<div class="textP">
+						<h3>Clients satisfait </h3>
+						<p>Les clients satisfait
+							<br/>et qui nous ont contacter qu'une fois. </p>
+					</div>
+				</div>
+				<div class="col-md-3 bar ">
+					<div class="progB chart" data-percent="45" data-animate="3500">
+						<div class="chart chart-content">
+							<div class="percentage" data-percent="45">
+								<span class="percent">45</span>
+							</div>
+						</div>
+					</div>
+					<div class="textP">
+						<h3>Professionels</h3>
+						<p>45 % de nos clients sont des professionels
+							<br/> Magasins, bureaux, locaux, syndics ... </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row aboutUs">
+				<div class="col-md-12 ">
+					<h3>et bien d'autres clients... que pensent t'ils de nous ?</h3>
+				</div>
+			</div>
+		</div>
+
+		<div style="position: relative;">
+
+			<div class="container">
+				<div class="row about">
+					<div class="col-md-6">
+						<div class="about1">
+							<img class="pic1Ab" src="images/picAbout/serrurier1.png">
+							<h3>Beranger G., Company LTV.</h3>
+							<p>Serrurier de bon conseil, il a pris le temps de m'expliquer sur les diverses possibilités de sécuriser ma porte et
+								ma proposer 3 tarifs différents que je puisse choir selon mes moyens, j'ai beaucoup apprécié cela.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="about2">
+							<img class="pic2Ab" src="images/picAbout/serrurier2.png">
+							<h3>David S.</h3>
+							<p>Un service correct sans plus, je ne trouve pas de différence entre la concurrence, sauf peut-être le prix, j'ai dû
+								payer plus cher ma serrure Fichet il y a plus de 4 ans.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="horL"></div>
+
+			<div class="container">
+				<div class="row about">
+					<div class="col-md-6">
+						<div class="about1">
+							<img class="pic1Ab" src="images/picAbout/serrurier3.png">
+							<h3>Beranger C.</h3>
+							<p>Rapid et efficace que demande plus, j'ai grave aprecier leurs façon de travailler à 2 pour poser ma nouvelle porte
+								blindée Picard, ils avais des bons outils et le resultat est parfait.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="about2">
+							<img class="pic2Ab" src="images/picAbout/serrurier4.png">
+							<h3>Sarah White architecte</h3>
+							<p>J'ai fait une demande pour mon client, mais vraiment une porte blindée sur mesure avec un décore à l'ancienne, le
+								travail a était réaliser parfaitement juste comme j'ai demandé, pourtant je ne suis pas facile à satisfaire.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--project start-->
+	<div id="project">
+		<div class="line3">
+			<div class="container">
+				<div id="project1"></div>
+				<div class="row Ama">
+					<div class="col-md-12">
+						<span name="projects" id="projectss"></span>
+						<h3>Nos prestations en serrurerie</h3>
+						<p>Voici quelques exemples de travaux en serrurerie que nous effectuons, contactez nous pour un devis entierement gratuit
+							!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+
+			<div class="row">
+				<!-- filter_block -->
+				<div id="options" class="col-md-12" style="text-align: center;">
+					<ul id="filter" class="option-set" data-option-key="filter">
+						<li>
+							<a class="selected" href="#filter" data-option-value="*" class="current">Portes Blindées</a>
+						</li>
+						<li>
+							<a href="#filter" data-option-value=".polygraphy">Rideaux Métalliques</a>
+						</li>
+						<li>
+							<a href="#filter" data-option-value=".branding">Coffres Forts</a>
+						</li>
+						<li>
+							<a href="#filter" data-option-value=".web">Volets Roulants</a>
+						</li>
+						<li>
+							<a href="#filter" data-option-value=".text_styles">Serrures & Cylindres</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //filter_block -->
+
+
+
+				<div class="portfolio_block columns3   pretty" data-animated="fadeIn">
+					<div class="element col-sm-4   gall branding">
+						<a class="plS" href="images/prettyPhotoImages/pic1.jpg" rel="prettyPhoto[gallery2]">
+							<img class="img-responsive picsGall" src="images/prettyPhotoImages/serrurier14.jpg" alt="pic1 Gallery" />
+						</a>
+						<div class="view project_descr ">
+							<h3>
+								<a href="#">Serrures, Cylindres, Barillets</a>
+							</h3>
+							<ul>
+								<li>
+									<i class="fa fa-eye"></i>615</li>
+								<li>
+									<a class="heart" href="#">
+										<i class="fa-heart-o"></i>174</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="element col-sm-4  gall branding">
+						<a class="plS" href="images/prettyPhotoImages/pic2.jpg" rel="prettyPhoto[gallery2]">
+							<img class="img-responsive picsGall" src="images/prettyPhotoImages/serrurier15.jpg" alt="pic2 Gallery" />
+						</a>
+						<div class="view project_descr center">
+							<h3>
+								<a href="#">Blocs Portes et Portes Blindées</a>
+							</h3>
+							<ul>
+								<li>
+									<i class="fa fa-eye"></i>369</li>
+								<li>
+									<a class="heart" href="#">
+										<i class="fa-heart-o"></i>86</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="element col-sm-4  gall web">
+						<a class="plS" href="images/prettyPhotoImages/pic3.jpg" rel="prettyPhoto[gallery2]">
+							<img class="img-responsive picsGall" src="images/prettyPhotoImages/serrurier16.jpg" alt="pic3 Gallery" />
+						</a>
+						<div class="view project_descr ">
+							<h3>
+								<a href="#">Armoires et Coffres Forts</a>
+							</h3>
+							<ul>
+								<li>
+									<i class="fa fa-eye"></i>400</li>
+								<li>
+									<a class="heart" href="#">
+										<i class="fa-heart-o"></i>124</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+
+					<div class="element col-sm-4  gall  text_styles">
+						<a class="plS" href="images/prettyPhotoImages/pic4.jpg" rel="prettyPhoto[gallery2]">
+							<img class="img-responsive picsGall" src="images/prettyPhotoImages/serrurier17.jpg" alt="pic1 Gallery" />
+						</a>
+						<div class="view project_descr ">
+							<h3>
+								<a href="#">Rideaux Metalliques & Volets</a>
+							</h3>
+							<ul>
+								<li>
+									<i class="fa fa-eye"></i>480</li>
+								<li>
+									<a class="heart" href="#">
+										<i class="fa-heart-o"></i>95</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="element col-sm-4  gall  web">
+						<a class="plS" href="images/prettyPhotoImages/pic5.jpg" rel="prettyPhoto[gallery2]">
+							<img class="img-responsive picsGall" src="images/prettyPhotoImages/serrurier18.jpg" alt="pic1 Gallery" />
+						</a>
+						<div class="view project_descr center">
+							<h3>
+								<a href="#">Interphones et Digicodes</a>
+							</h3>
+							<ul>
+								<li>
+									<i class="fa fa-eye"></i>215</li>
+								<li>
+									<a class="heart" href="#">
+										<i class="fa-heart-o"></i>14</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="element col-sm-4  gall  polygraphy">
+						<a class="plS" href="images/prettyPhotoImages/pic6.jpg" rel="prettyPhoto[gallery2]">
+							<img class="img-responsive picsGall" src="images/prettyPhotoImages/serrurier19.jpg" alt="pic1 Gallery" />
+						</a>
+						<div class="view project_descr ">
+							<h3>
+								<a href="#">Barreaudages & Grilles de défense</a>
+							</h3>
+							<ul>
+								<li>
+									<i class="fa fa-eye"></i>375</li>
+								<li>
+									<a class="heart" href="#">
+										<i class="fa-heart-o"></i>102</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="element col-sm-4   gall branding">
+						<a class="plS" href="images/prettyPhotoImages/pic7.jpg" rel="prettyPhoto[gallery2]">
+							<img class="img-responsive picsGall" src="images/prettyPhotoImages/serrurier20.jpg" alt="pic1 Gallery" />
+						</a>
+						<div class="view project_descr ">
+							<h3>
+								<a href="#">Alarmes et Caméras IP</a>
+							</h3>
+							<ul>
+								<li>
+									<i class="fa fa-eye"></i>440</li>
+								<li>
+									<a class="heart" href="#">
+										<i class="fa-heart-o"></i>35</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="element col-sm-4  gall text_styles">
+						<a class="plS" href="images/prettyPhotoImages/pic8.jpg" rel="prettyPhoto[gallery2]">
+							<img class="img-responsive picsGall" src="images/prettyPhotoImages/serrurier21.jpg" alt="pic1 Gallery" />
+						</a>
+						<div class="view project_descr ">
+							<h3>
+								<a href="#">Devantures de magasin</a>
+							</h3>
+							<ul>
+								<li>
+									<i class="fa fa-eye"></i>512</li>
+								<li>
+									<a class="heart" href="#">
+										<i class="fa-heart-o"></i>36</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="element col-sm-4  gall polygraphy">
+						<a class="plS" href="images/prettyPhotoImages/pic9.jpg" rel="prettyPhoto[gallery2]">
+							<img class="img-responsive picsGall" src="images/prettyPhotoImages/serrurier22.jpg" alt="pic1 Gallery" />
+						</a>
+						<div class="view project_descr ">
+							<h3>
+								<a href="#">Portes vitrées et accessoires</a>
+							</h3>
+							<ul>
+								<li>
+									<i class="fa fa-eye"></i>693</li>
+								<li>
+									<a class="heart" href="#">
+										<i class="fa-heart-o"></i>204</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-md-12 cBtn  lb" style="text-align: center;">
+					<ul class="load_more_cont ">
+						<li class="dowbload btn_load_more">
+							<a href="javascript:void(0);">
+								<i class="fa fa-arrow-down"></i>
+								<a href="tel:+33972501999">&#9742;: 09 72 50 19 99</a>
+							</a>
+						</li>
+						<li class="buy">
+							<a href="#">
+								<i class="fa fa-shopping-cart"></i>DEVIS GRATUIT
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<script type="text/javascript">
+				jQuery(window).load(function () {
+					items_set = [
+
+						{ category: 'branding', lika_count: '77', view_count: '234', src: 'images/prettyPhotoImages/serrurier23.jpg', title: 'Groom pour porte', content: '' },
+
+						{ category: 'polygraphy', lika_count: '45', view_count: '100', src: 'images/prettyPhotoImages/serrurier24.jpg', title: 'Groom sol pour porte', content: '' },
+
+						{ category: 'text_styles', lika_count: '22', view_count: '140', src: 'images/prettyPhotoImages/serrurier25.jpg', title: 'Cornieres anti-pince', content: '' }
+
+
+					];
+					jQuery('.portfolio_block').portfolio_addon({
+						type: 1, // 2-4 columns simple portfolio
+						load_count: 3,
+
+						items: items_set
+					});
+					$('#container').isotope({
+						animationOptions: {
+							duration: 900,
+							queue: false
+						}
+					});
+				});
+			</script>
+		</div>
+	</div>
+
+	<!--news start-->
+
+	<div id="news">
+		<div class="line4">
+			<div class="container">
+				<div class="row Ama">
+					<div class="col-md-12">
+						<h3>Nouveauté</h3>
+						<p>Les nouveaux produits, consultez nous pour un devis et conseil gratuits</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row news">
+				<div class="col-md-6  text-left">
+					<img class="img-responsive picsGall" src="images/picNews/serrurier5.jpg" />
+					<h3>
+						<a href="#">Les Serrures anti-panique</a>
+					</h3>
+					<ul>
+						<li>
+							<i class="fa fa-calendar"></i>Janvier 25, 2017</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-folder-open"></i>Staff</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-comments"></i>17 comments</a>
+						</li>
+					</ul>
+					<p>Les serrures anti-paniques de grandes marques connues comme Reelax, Vachette, JPM, Fapim, Iseo, pour équiper votre porte
+						d'issue de secours coupe-feu ou non. Nos serrures anti-paniques sont aptes à équiper les menuiseries bois, acier, alu
+						et pvc. </i>
+						</a>
+					</p>
+					<hr class="hrNews">
+				</div>
+				<div class="col-md-6 text-right">
+					<img class="img-responsive picsGall" src="images/picNews/serrurier6.jpg" />
+					<h3>
+						<a href="#">Serrures de Haut de gamme Fichet</a>
+					</h3>
+					<ul>
+						<li>
+							<i class="fa fa-calendar"></i>Janvier 28, 2018</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-folder-open"></i>Staff</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-comments"></i>29 comments</a>
+						</li>
+					</ul>
+					<p>Fichet vous propose des serrures haut de gamme, vous garantissant une résistante à l’effraction certifiée A2P. Pour
+						présenter une résistance optimale aux tentatives d’effraction (crochetage, sciage, perçage, arrachement…), les serrures
+						Fichet possèdent un ensemble d’éléments de défense bénéficiant du meilleur de la technologie Fichet</i>
+						</a>
+					</p>
+					<hr class="hrNews">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row news2 news">
+				<div class="col-md-6 text-left">
+					<img class="img-responsive picsGall" src="images/picNews/serrurier7.jpg" />
+					<h3>
+						<a href="#">Bloc-Porte Blindé Picard de Haute Sécurité</a>
+					</h3>
+					<ul>
+						<li>
+							<i class="fa fa-calendar"></i>Janvier 14, 2018</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-folder-open"></i>Staff</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-comments"></i>142 comments</a>
+						</li>
+					</ul>
+					<p>Toutes les portes blindées d'appartement sont de fabrication française. Sur-mesure, les portes palières s'intègrent
+						sans modification du bâti existant. Tous nos blocs-portes d'appartement sont certifiés A2P BP. Les portes blindées
+						pour appartement certifiées A2P BP3, vous assurent le plus haut niveau de sécurité.</i>
+						</a>
+					</p>
+					<hr class="hrNews">
+				</div>
+				<div class="col-md-6 text-right">
+					<img class="img-responsive picsGall" src="images/picNews/serrurier8.jpg" />
+					<h3>
+						<a href="#">Motorisation de portail</a>
+					</h3>
+					<ul>
+						<li>
+							<i class="fa fa-calendar"></i>Fevier 2, 2015</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-folder-open"></i>Staff</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-comments"></i>17 comments</a>
+						</li>
+					</ul>
+					<p>Facilitez-vous l'accès et la gestion de vos ouvertures avec notre sélection de motorisation de portail et volets. Que
+						vous souhaitiez installer un portail mototisé ou un volet motorisé, vous avez l'assurance de trouver la solution adaptée.
+						Nous proposons des systèmes de motorisation de portail et volets de grandes marques</i>
+						</a>
+					</p>
+					<hr class="hrNews">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row news2 news">
+				<div class="col-md-6 text-left">
+					<img class="img-responsive picsGall" src="images/picNews/serrurier9.jpg" />
+					<h3>
+						<a href="#">Sécurisez votre maison avec une serrure de Portail</a>
+					</h3>
+					<ul>
+						<li>
+							<i class="fa fa-calendar"></i>April 25, 2014</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-folder-open"></i>Staff</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-comments"></i>17 comments</a>
+						</li>
+					</ul>
+					<p>Votre nouveau portail ne possède pas de serrure ? Découvrez notre sélection de serrures de portail et grille. Se sentir
+						en sécurité chez soi commence par une bonne sécurité de la première porte d'accès à votre maison. Si vous possédez
+						un jardin, votre portail joue alors ce rôle de première sécurité. </i>
+						</a>
+					</p>
+					<hr class="hrNews">
+				</div>
+				<div class="col-md-6 text-right">
+					<img class="img-responsive picsGall" src="images/picNews/serrurier10.jpg" />
+					<h3>
+						<a href="#">Grille de défenses et barreaudage</a>
+					</h3>
+					<ul>
+						<li>
+							<i class="fa fa-calendar"></i>Fevrier 8, 2018</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-folder-open"></i>Staff</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-comments"></i>17 comments</a>
+						</li>
+					</ul>
+					<p>Découvrez tous nos produits Grille de défense. Retrouvez un large choix de marques et de références Grille de défense
+						au meilleur prix. Toutes les solutions pour lutter contre le cambriolage </i>
+						</a>
+					</p>
+					<hr class="hrNews">
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="container hideObj2" style="display:none;">
+			<div class="row news2 news">
+				<div class="col-md-6 text-right">
+					<img class="img-responsive picsGall" src="images/picNews/serrurier11.jpg" />
+					<h3>
+						<a href="#">Alarme de maison ou pour votre commerce</a>
+					</h3>
+					<ul>
+						<li>
+							<i class="fa fa-calendar"></i>Fevrier 6, 2018</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-folder-open"></i>Staff</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-comments"></i>42 comments</a>
+						</li>
+					</ul>
+					<p>Nos installateurs d'alarmes, vous propose un système d'alarme connecté jour et nuit à notre centre de télésurveillance
+						professionnel, avec des détecteurs photo pour déterminer la cause de l'alerte
+						<i class="fa fa-angle-right"></i>
+						</a>
+					</p>
+					<hr class="hrNews">
+				</div>
+				<div class="col-md-6 text-left">
+					<img class="img-responsive picsGall" src="images/picNews/serrurier12.jpg" />
+					<h3>
+						<a href="#">Cylindre de haute surété</a>
+					</h3>
+					<ul>
+						<li>
+							<i class="fa fa-calendar"></i>Fevrier 1, 2015</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-folder-open"></i>Staff</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-comments"></i>17 comments</a>
+						</li>
+					</ul>
+					<p>Le cylindre de porte est un système indispensable de protection anti-intrusion, un barillet de porte de Haute Sûreté
+						renforce idéalement un des points très sensible d'une porte d'entrée, il est donc nécessaire d'utiliser un cylindre
+						de serrure de grande qualité pour éviter l'effraction, il doit être, au minimum, être certifié
+						<i class="fa fa-angle-right"></i>
+						</a>
+					</p>
+					<hr class="hrNews">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row cBtn">
+				<div class="col-md-12" style="text-align: center; margin-bottom: -90px; z-index: 10;">
+					<ul class="mNews">
+						<li class="dowbload bhide2">
+							<a href="#">
+								<i class="fa fa-arrow-down"></i>Load More news</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--contact start-->
+
+	<div id="contact">
+		<div class="line5">
+			<div class="container">
+				<div class="row Ama">
+					<div class="col-md-12">
+						<h3>Avez vous des questions, A quoi je peut vous aider ?</h3>
+						<p>Contactez-nous par mail via ce formulaire</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="sent row">
+				<!-- ההודעה נשלחה, נחזור אליכם בהקדם האפשרי -->
+				Le message a été envoyé, nous vous répondrons dans les plus brefs délais
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-xs-12 forma">
+					<form id="contact-form">
+						<input id="contact-name" type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Nom *' />
+						<input id="contact-email" type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='votre mail *' />
+						<input id="contact-phone" type="tel" class="col-md-12 col-xs-12 Subject" name='Phone' placeholder='votre tel *' />
+						
+						<input id="contact-subject" type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Sujet de votre demande'
+						/>
+						<textarea id="contact-message" type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Message de votre demande *'></textarea>
+						<div class="col-md-12">
+							<div class="form-group">
+								<!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
+								<div class="g-recaptcha" data-sitekey="6Ld2tkcUAAAAAPAQlAVohlcLXQNkQm_njGEElNA8"></div>
+							</div>
+						</div>
+						<div class="cBtn col-xs-12">
+							<ul>
+								<li class="clear">
+									<a href="#">
+										<i class="fa fa-times">Effacer</i>
+									</a>
+								</li>
+								<li class="send" id="contact-submit">
+									<a href="#">
+										<i class="fa fa-share" type="submit" name="submit">Envoyer mon message</i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-3 col-xs-12 cont">
+					<ul>
+						<li>
+							<i class="fa fa-home"></i>Serrurerie de Proximité</li>
+						<li>
+							<i class="fa fa-phone"></i>09 72 50 19 99</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-envelope"></i>contact@clic-je-suis-chez-vous.com</li>
+						</a>
+						<li>
+							<i class="fa fa-skype"></i>Easy</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter"></i>Twitter</li>
+						</a>
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook-square"></i>Facebook</li>
+						</a>
+						<li>
+							<a href="#">
+								<i class="fa fa-dribbble"></i>Dribbble</li>
+						</a>
+						<li>
+							<a href="#">
+								<i class="fa fa-flickr"></i>Flickr</li>
+						</a>
+						<li>
+							<a href="#">
+								<i class="fa fa-youtube-play"></i>YouTube</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="line6">
+			<!-- <div id="map"></div> -->
+			<iframe width="100%" height="750" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBZMkMxl3Ck4-5NqEkJCGophP3KMyR5I2w
+				  &q=Paris" allowfullscreen>
+			</iframe>
+			<!-- api key = AIzaSyBZMkMxl3Ck4-5NqEkJCGophP3KMyR5I2w -->
+			<!-- <div id="map-canvas"></div> -->
+			<!-- <iframe src="https://www.google.com/maps/embed/v1/place?q=Paris, France&amp;key=" width="100%" height="750" frameborder="0" style="border:0"></iframe>  -->
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d48386.401887313725!2d-73.9407136!3d40.7147117!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1402409149092" width="100%" height="750" frameborder="0" style="border:0"></iframe>			 -->
+		</div>
+		<div class="container">
+			<div class="row ftext">
+				<div class="col-md-12">
+					<a id="features"></a>
+					<h3>---</h3>
+					<p>----</p>
+				</div>
+				<div class="cBtn">
+					<ul style="margin-top: 23px; margin-bottom: 0px; padding-left: 26px;">
+						<li class="dowbload">
+							<a href="#">
+								<i class="fa fa-star"></i>?</a>
+						</li>
+						<li class="buy">
+							<a href="#">
+								<i class="fa fa-download"></i>!</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="line7">
+			<div class="container">
+				<div class="row footer">
+					<div class="col-md-12">
+						<h3>Inscrivez vous à notre "Newsletter"</h3>
+						<p>recevez des offres et des informations de notre entreprise sur la protection et la sécurité de vos lieux de travail
+							et lieu de vie</p>
+						<div class="fr">
+							<div style="display: inline-block;">
+								<input class="col-md-6 fEmail" name='Email' placeholder='Entrer votre Email' />
+								<a href="#" class="subS">S'inscrire!</a>
+							</div>
+						</div>
+					</div>
+					<div class="soc col-md-12">
+						<ul>
+							<li class="soc1">
+								<a href="#"></a>
+							</li>
+							<li class="soc2">
+								<a href="#"></a>
+							</li>
+							<li class="soc3">
+								<a href="#"></a>
+							</li>
+							<li class="soc4">
+								<a href="#"></a>
+							</li>
+							<li class="soc5">
+								<a href="#"></a>
+							</li>
+							<li class="soc6">
+								<a href="#"></a>
+							</li>
+							<li class="soc7">
+								<a href="#"></a>
+							</li>
+							<li class="soc8">
+								<a href="#"></a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lineBlack">
+			<div class="container">
+				<div class="row downLine">
+					<div class="col-md-12 text-right">
+						<!--input  id="searchPattern" type="search" name="pattern" value="Search the Site" onblur="if(this.value=='') {this.value='Search the Site'; }" onfocus="if(this.value =='Search the Site' ) this.value='';this.style.fontStyle='normal';" style="font-style: normal;"/-->
+						<input id="searchPattern" type="search" placeholder="Recherche dans le site" />
+						<i class="glyphicon glyphicon-search" style="font-size: 13px; color:#a5a5a5;" id="iS"></i>
+					</div>
+					<div class="col-md-6 text-left copy">
+						<p>&copy; Easy</p>
+					</div>
+					<div class="col-md-6 text-right dm">
+						<ul id="downMenu">
+							<li class="active">
+								<a href="#home">Accueil</a>
+							</li>
+							<li>
+								<a href="#about">Notre métier</a>
+							</li>
+							<li>
+								<a href="#project1">Nos préstations</a>
+							</li>
+							<li>
+								<a href="#news">Les nouveautés</a>
+							</li>
+							<li class="last">
+								<a href="#contact">Contactez-nous</a>
+							</li>
+							<!--li><a href="#features">Features</a></li-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".bhide").click(function () {
+				$(".hideObj").slideDown();
+				$(this).hide(); //.attr()
+				return false;
+			});
+			$(".bhide2").click(function () {
+				$(".container.hideObj2").slideDown();
+				$(this).hide(); // .attr()
+				return false;
+			});
+
+			$('.heart').mouseover(function () {
+				$(this).find('i').removeClass('fa-heart-o').addClass('fa-heart');
+			}).mouseout(function () {
+				$(this).find('i').removeClass('fa-heart').addClass('fa-heart-o');
+			});
+
+			function sdf_FTS(_number, _decimal, _separator) {
+				var decimal = (typeof (_decimal) != 'undefined') ? _decimal : 2;
+				var separator = (typeof (_separator) != 'undefined') ? _separator : '';
+				var r = parseFloat(_number)
+				var exp10 = Math.pow(10, decimal);
+				r = Math.round(r * exp10) / exp10;
+				rr = Number(r).toFixed(decimal).toString().split('.');
+				b = rr[0].replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g, "\$1" + separator);
+				r = (rr[1] ? b + '.' + rr[1] : b);
+
+				return r;
+			}
+
+			setTimeout(function () {
+				$('#counter').text('0');
+				$('#counter1').text('0');
+				$('#counter2').text('0');
+				setInterval(function () {
+
+					var curval = parseInt($('#counter').text());
+					var curval1 = parseInt($('#counter1').text().replace(' ', ''));
+					var curval2 = parseInt($('#counter2').text());
+					if (curval <= 707) {
+						$('#counter').text(curval + 1);
+					}
+					if (curval1 <= 12280) {
+						$('#counter1').text(sdf_FTS((curval1 + 20), 0, ' '));
+					}
+					if (curval2 <= 245) {
+						$('#counter2').text(curval2 + 1);
+					}
+				}, 2);
+
+			}, 500);
+		});
+	</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			jQuery('#menu').slicknav();
+
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			var $menu = $("#menuF");
+
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100 && $menu.hasClass("default")) {
+					$menu.fadeOut('fast', function () {
+						$(this).removeClass("default")
+							.addClass("fixed transbg")
+							.fadeIn('fast');
+					});
+				} else if ($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+					$menu.fadeOut('fast', function () {
+						$(this).removeClass("fixed transbg")
+							.addClass("default")
+							.fadeIn('fast');
+					});
+				}
+			});
+		});
+    //jQuery
+	</script>
+	<script>
+		/*menu*/
+		function calculateScroll() {
+			var contentTop = [];
+			var contentBottom = [];
+			var winTop = $(window).scrollTop();
+			var rangeTop = 200;
+			var rangeBottom = 500;
+			$('.navmenu').find('a').each(function () {
+				contentTop.push($($(this).attr('href')).offset().top);
+				contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
+			})
+			$.each(contentTop, function (i) {
+				if (winTop > contentTop[i] - rangeTop && winTop < contentBottom[i] - rangeBottom) {
+					$('.navmenu li')
+						.removeClass('active')
+						.eq(i).addClass('active');
+				}
+			})
+		};
+
+		$(document).ready(function () {
+			calculateScroll();
+			$(window).scroll(function (event) {
+				calculateScroll();
+			});
+			$('.navmenu ul li a').click(function () {
+				$('html, body').animate({ scrollTop: $(this.hash).offset().top - 80 }, 800);
+				return false;
+			});
+		});		
+	</script>
+	<script type="text/javascript" charset="utf-8">
+
+		jQuery(document).ready(function () {
+			jQuery(".pretty a[rel^='prettyPhoto']").prettyPhoto({ animation_speed: 'normal', theme: 'light_square', slideshow: 3000, autoplay_slideshow: true, social_tools: '' });
+
+		});
+	</script>
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="validator.js"></script>
+	
+	<script type="text/javascript">
+		$(function () {
+			$('.sent').hide();
+			
+			$('#contact-submit').validator();
+			$('#contact-submit').click(function () {
+				var recaptcha = $("#g-recaptcha-response").val();
+				var subject = $('#contact-subject').val();
+				var message = 'My name is: ' + $('#contact-name').val() +
+					'\nMy Email: ' + $('#contact-email').val() +
+					'\nMy Phone Number: ' + $('#contact-phone').val() +
+					'\nMessage: ' + $('#contact-message').val();
+
+				var data = {
+					"subject": subject,
+					"body": message,
+					"g-recaptcha-response": recaptcha
+				};
+
+				$.ajax({
+					type: 'POST',
+					url: 'contact/',
+					data: JSON.stringify(data),
+					contentType: 'application/json',
+					dataType: 'json',
+					error: function (err) {
+						console.log(err);
+						// $(".message").text(returnval + " failure");
+						// $(".message").fadeIn("slow");
+						// $(".message").delay(2000).fadeOut(1000);
+					},
+					success: function (res) {
+						console.log()
+						$('.sent').show();
+						$('#contact-form').hide();
+					}
+				});
+
+			});
+		});
+	</script>
+			
+</body>
+
+</html>
