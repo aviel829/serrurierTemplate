@@ -10,7 +10,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  background: #f8f7f7;
+  background: lightseagreen;
   color: #62646c;
   -webkit-font-smoothing: antialiased !important;
 }
@@ -208,7 +208,7 @@ Bootstrap Modal
 
 .modal-content {
   border-radius: 0;
-  background: #f8f7f7;
+  background: lightseagreen;
   padding: 30px;
   border: 0;
 }
@@ -509,7 +509,7 @@ section {
   height: 0;
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
-  border-bottom: 18px solid #f8f7f7;
+  border-bottom: 18px solid lightseagreen;
   margin-left: -20px;
 }
 

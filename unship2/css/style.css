@@ -246,7 +246,7 @@ OUR SERVICES SECTION
   content: "";
   width: 300%;
   height: 100%;
-  background: #1a8ae1;
+  background: dimgray;
   top: 0;
   right: 25px;
   z-index: -1;
@@ -318,7 +318,7 @@ ABOUT US WRAP
 }
 
 .about-us-wrap .about-us-content.capabilities {
-  background: #336cac;
+  background: dimgray;
   padding: 48px 52px;
   color: #fff;
 }
@@ -626,7 +626,7 @@ PRICING
 }
 
 .pricing-table .pricing-header {
-  background: #336cac;
+  background: dimgray;
   color: #fff;
   text-align: center;
   padding: 40px;
