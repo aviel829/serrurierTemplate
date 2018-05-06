@@ -8,9 +8,20 @@
 <head>
 
     <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Glint</title>
+    ================================================== -->    
+	<meta charset="utf-8">
+
+		<meta name="dcterms.creator" content="${mainUrl}">
+		<meta name="dcterms.subject" content="${Type}">
+		<meta name="dcterms.description" content="${ville}">
+		<meta name="description" content="${description}">
+		<meta name="geo.region" content="${regionId}">
+		<meta name="dcterms.title" content="${title}">
+		<meta name="geo.placename" content="${ville}">
+		<meta name="geo.position" content="${latitude};${longitude}">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,100" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>${title}</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -44,8 +55,12 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Homepage">
+                <img src="images/apple-touch-icon.png" alt="Homepage">
             </a>
+        </div>
+
+        <div class="text-center" style="margin-top: 15px;">
+            <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
         </div>
 
         <nav class="header-nav">
@@ -56,15 +71,15 @@
                 <h3>Navigation</h3>
                 
                 <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
-                    <li><a class="smoothscroll"  href="#clients" title="clients">Clients</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                    <li class="current"><a class="smoothscroll"  href="${ILINK1}">${ITEXT1}</a></li>
+                    <li><a class="smoothscroll"  href="${ILINK1}">${ITEXT2}</a></li>
+                    <li><a class="smoothscroll"  href="${ILINK1}">${ITEXT3}</a></li>
+                    <li><a class="smoothscroll"  href="${ILINK1}">${ITEXT4}</a></li>
+                    <li><a class="smoothscroll"  href="${ILINK1}">${ITEXT5}</a></li>
+                    <li><a class="smoothscroll"  href="${ILINK1}">${ITEXT6}</a></li>
                 </ul>
     
-                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
+                <p>${title1}</p>
     
                 <ul class="header-nav__social">
                     <li>
@@ -75,12 +90,6 @@
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
                     </li>
                 </ul>
 
@@ -98,7 +107,7 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/banniere.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
@@ -107,19 +116,16 @@
 
             <div class="row home-content__main">
 
-                <h3>Welcome to Glint</h3>
+                <h3>${title2}</h3>
 
                 <h1>
-                    We are a creative group <br>
-                    of people who design <br>
-                    influential brands and <br>
-                    digital experiences.
+                   ${desc2}
                 </h1>
 
                 <div class="home-content__buttons">
-                    <a href="#contact" class="smoothscroll btn btn--stroke">
-                        Start a Project
-                    </a>
+                    <!--<a href="#contact" class="smoothscroll btn btn--stroke">-->
+                        <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
+                    <!--</a>-->
                     <a href="#about" class="smoothscroll btn btn--stroke">
                         More About Us
                     </a>
@@ -166,20 +172,20 @@
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead subhead--dark">Hello There</h3>
-                <h1 class="display-1 display-1--light">We Are Glint</h1>
+                <h3 class="subhead subhead--dark">${title3}</h3>
+                <h1 class="display-1 display-1--light">${title4}</h1>
             </div>
         </div> <!-- end section-header -->
 
         <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt. 
+                    ${desc3}
                 </p>
             </div>
         </div> <!-- end about-desc -->
 
-        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+        <!--<div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
                 
             <div class="col-block stats__col ">
                 <div class="stats__count">127</div>
@@ -198,7 +204,7 @@
                 <h5>Happy Clients</h5> 
             </div>
 
-        </div> <!-- end about-stats -->
+        </div>  end about-stats -->
 
         <div class="about__line"></div>
 
@@ -211,8 +217,8 @@
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">What We Do</h3>
-                <h1 class="display-2">We’ve got everything you need to launch and grow your business</h1>
+                <h3 class="subhead">${title5}</h3>
+                <h1 class="display-2">${desc4}</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -223,10 +229,9 @@
                     <i class="icon-paint-brush"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h2">Brand Identity</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="h2">${title6}</h3>
+                    <p>
+                        ${desc5}
                     </p>
                 </div>
             </div>
@@ -236,10 +241,8 @@
                     <i class="icon-group"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h2">Illustration</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="h2">${title7}</h3>
+                    <p>${desc6}
                     </p>
                 </div>
             </div>
@@ -249,10 +252,8 @@
                     <i class="icon-megaphone"></i>
                 </div>  
                 <div class="service-text">
-                    <h3 class="h2">Marketing</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="h2">${title8}</h3>
+                    <p>${desc7}
                     </p>
                 </div>
             </div>
@@ -262,10 +263,8 @@
                     <i class="icon-earth"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h2">Web Design</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="h2">${title9}</h3>
+                    <p>${desc8}
                     </p>
                 </div>
             </div>
@@ -275,10 +274,8 @@
                     <i class="icon-cube"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h2">Packaging Design</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="h2">${title10}</h3>
+                    <p>${desc9}
                     </p>
                 </div>
             </div>
@@ -286,10 +283,8 @@
             <div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon"><i class="icon-lego-block"></i></div>
                 <div class="service-text">
-                    <h3 class="h2">Web Development</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="h2">${title11}</h3>
+                    <p>${desc10}
                     </p>
                 </div>
             </div>
@@ -307,8 +302,8 @@
                 
             <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
                 <div class="col-full">
-                    <h3 class="subhead">Recent Works</h3>
-                    <h1 class="display-2 display-2--light">We love what we do, check out some of our latest works</h1>
+                    <h3 class="subhead">${title12}</h3>
+                    <h1 class="display-2 display-2--light">${desc11}</h1>
                 </div>
             </div> <!-- end section-header -->
 
@@ -322,9 +317,9 @@
                         <div class="item-folio">
                                 
                             <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                    <img src="images/portfolio/lady-shutterbug.jpg" 
-                                         srcset="images/portfolio/lady-shutterbug.jpg 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
                                 </a>
                             </div>
     
@@ -352,9 +347,9 @@
                         <div class="item-folio">
                                 
                             <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                    <img src="images/portfolio/woodcraft.jpg" 
-                                         srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
                                 </a>
                             </div>
     
@@ -382,9 +377,9 @@
                         <div class="item-folio">
                                 
                             <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                                    <img src="images/portfolio/the-beetle.jpg"
-                                         srcset="images/portfolio/the-beetle.jpg 1x, images/portfolio/the-beetle@2x.jpg 2x" alt="">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
                                 </a>
                             </div>
     
@@ -412,9 +407,9 @@
                         <div class="item-folio">
                                 
                             <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-grow-green.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
-                                    <img src="images/portfolio/grow-green.jpg" 
-                                         srcset="images/portfolio/grow-green.jpg 1x, images/portfolio/grow-green@2x.jpg 2x" alt="">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
                                 </a>
                             </div>
     
@@ -442,9 +437,9 @@
                         <div class="item-folio">
                                 
                             <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-guitarist.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
-                                    <img src="images/portfolio/guitarist.jpg" 
-                                         srcset="images/portfolio/guitarist.jpg 1x, images/portfolio/guitarist@2x.jpg 2x" alt="">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
                                 </a>
                             </div>
     
@@ -472,9 +467,9 @@
                         <div class="item-folio">
                                 
                             <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-palmeira.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
-                                    <img src="images/portfolio/palmeira.jpg"
-                                         srcset="images/portfolio/palmeira.jpg 1x, images/portfolio/palmeira@2x.jpg 2x" alt="">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
                                 </a>
                             </div>
     
