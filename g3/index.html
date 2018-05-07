@@ -59,9 +59,9 @@
             </a>
         </div>
 
-        <div class="text-center" style="margin-top: 15px;">
-            <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
-        </div>
+        <h1 class="text-center" style="margin-top: 15px;">
+            <a class="" href="tel:${tel.}" role="button">${tel.}</a>
+        </h1>
 
         <nav class="header-nav">
 
@@ -126,9 +126,7 @@
                     <!--<a href="#contact" class="smoothscroll btn btn--stroke">-->
                         <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
                     <!--</a>-->
-                    <a href="#about" class="smoothscroll btn btn--stroke">
-                        More About Us
-                    </a>
+                    
                 </div>
 
             </div>
@@ -143,24 +141,6 @@
 
         </div> <!-- end home-content -->
 
-
-        <ul class="home-social">
-            <li>
-                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
-            </li>
-        </ul> 
         <!-- end home-social -->
 
     </section> <!-- end s-home -->
@@ -210,6 +190,7 @@
 
     </section> <!-- end s-about -->
 
+    <br>
 
     <!-- services
     ================================================== -->
@@ -293,6 +274,7 @@
 
     </section> <!-- end s-services -->
 
+    <br>
 
     <!-- works
     ================================================== -->
@@ -615,7 +597,7 @@
 
     <!-- footer
     ================================================== -->
-    <footer>
+    <div style="background: white; font-family: 'montserrat-light', sans-serif; font-size: 15px; line-height: 2; padding-top: 25px;">
 
         <div class="row footer-main">
 
@@ -633,7 +615,7 @@
 
                 <div class="subscribe-form">
                     <form id="mc-form" class="group" novalidate="true">
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Adresse e-mail" required="">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Adresse e-mail" required="" style="color: red; opacity: 1;">
                         <input type="submit" name="subscribe" value="Souscrire">
                         <label for="mc-email" class="subscribe-message"></label>
                     </form>
@@ -657,7 +639,7 @@
 
         </div> <!-- end footer-bottom -->
 
-    </footer> <!-- end footer -->
+    </div> <!-- end footer -->
 
 
     <!-- photoswipe background
