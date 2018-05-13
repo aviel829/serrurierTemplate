@@ -112,7 +112,7 @@ h5, h6          { font-weight: bolder }
 }
 
 .billboard.light{
-    background: url('../img/billboard.jpg') no-repeat;   
+    background: url('../img/banniere.jpg') no-repeat;   
      
     background-size: cover;
     -webkit-background-size: cover;
@@ -141,12 +141,12 @@ h5, h6          { font-weight: bolder }
 }
 
 .billboard .caption{
-    margin-top: 130px;
+    /*margin-top: 130px;*/
     text-align: center;
 }
 
 .billboard .caption.light{
-    color: #fff;
+    color: black;
 }
 
 .billboard .caption.dark{
@@ -161,7 +161,7 @@ h5, h6          { font-weight: bolder }
 }
 
 .billboard .caption.light h1{
-    color: #fff;
+    color: black;
 }
 
 .billboard .caption.dark h1{
@@ -175,7 +175,7 @@ h5, h6          { font-weight: bolder }
 }
 
 .billboard .caption.light p{
-    color: #fff;
+    color: black;
 }
 
 .billboard .caption.dark p{
@@ -240,7 +240,7 @@ header nav ul li a{
 }
 
 header.light nav ul li a{  
-    color: #fff;
+    color: black;
 }
 
 header.light nav ul li a:hover{
@@ -329,7 +329,7 @@ header.dark nav ul li a:hover{
 }
 
 .video h3{
-    color: #fff;
+    color: black;
     font-family: "raleway-regular";
     font-size: 14px;
     font-weight: normal!important;
@@ -509,7 +509,7 @@ header.dark nav ul li a:hover{
 }
 
 .blog_posts ul li .media .date .day{
-    color: #fff;
+    color: black;
     font-family: "raleway-bold";
     font-size: 18px;
     font-weight: bold;
@@ -517,7 +517,7 @@ header.dark nav ul li a:hover{
 }
 
 .blog_posts ul li .media .date .month{
-    color: #fff;
+    color: black;
     font-family: "raleway-regular";
     font-size: 12px;
 }

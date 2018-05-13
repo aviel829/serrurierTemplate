@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>${title}</title>
+
+    <meta charset="utf-8">
+
+		<meta name="dcterms.creator" content="${mainUrl}">
+		<meta name="dcterms.subject" content="${Type}">
+		<meta name="dcterms.description" content="${ville}">
+		<meta name="description" content="${description}">
+		<meta name="geo.region" content="${regionId}">
+		<meta name="dcterms.title" content="${title}">
+		<meta name="geo.placename" content="${ville}">
+		<meta name="geo.position" content="${latitude};${longitude}">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,100" rel="stylesheet" type="text/css"/>
+	    
+	    <!-- Web Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,400italic,700,700italic,900,900italic,500italic' rel='stylesheet' type='text/css'>
+       	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	    <!-- Flaticon CSS -->
+	    <link href="fonts/flaticon/flaticon.css" rel="stylesheet">
+	    <!-- font-awesome CSS -->
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+	    <!-- Offcanvas CSS -->
+	    <link href="css/off-canvas.css" rel="stylesheet">
+	    <!-- animate CSS -->
+	    <link href="css/animate.css" rel="stylesheet">
+	    <!-- language CSS -->
+	    <link href="css/language-select.css" rel="stylesheet">
+	    <!-- owl.carousel CSS -->
+	    <link href="owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+		<!-- magnific-popup -->
+    	<link href="css/magnific-popup.css" rel="stylesheet">
+	    <!-- Bootstrap Core CSS -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Template Core Styles -->
+	    <link href="css/template.css" rel="stylesheet">
+	    <!-- Main Menu Styles -->
+	    <link href="css/menu.css" rel="stylesheet">
+	    <!-- Custom CSS -->
+	    <link href="css/style.css" rel="stylesheet">
+	    <!-- Responsive CSS -->
+	    <link href="css/responsive.css" rel="stylesheet">
+
+	    <script src="js/vendor/modernizr-2.8.1.min.js"></script>
+	    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+		    <script src="js/vendor/html5shim.js"></script>
+		    <script src="js/vendor/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+
+
+	<body id="page-top">
+		<div id="st-container" class="st-container">
+		    <div class="st-pusher">
+	        	<div class="st-content">
+					<header class="header">
+				  		<nav class="top-bar">
+				  			<div class="container">
+				  				<div class="row">
+				  					<div class="col-sm-4 col-xs-12">
+					  					<div class="call-to-action">
+					  						<ul class="list-inline">
+					  							<li><a href="#"><strong><a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a></strong></a></li>
+					  							<li><a href="#"><strong>${email}</strong></a></li>
+					  						</ul>
+					  					</div><!-- /.call-to-action -->
+				  					</div><!-- /.col-sm-6 -->
+
+				  					<div class="col-sm-4 col-xs-12">
+					  					<div class="logo text-center">
+					  						<h1><a href="index.html"><img src="img/apple-touch-icon-72x72.png" alt=""></a><span>${MainType}</span></h1>
+					  					</div>
+				  					</div>
+
+				  					<div class="col-sm-4 hidden-xs">
+					  					<div class="topbar-right">
+						  					<div class="lang-support pull-right">
+												<select class="lang-select">
+													<option value="" disabled selected>La langue</option>
+													<option value="united-kingdom" data-class="flag-uk">Anglais</option>
+													<option value="france" data-class="flag-france">Français</option>
+													<option value="spain" data-class="flag-spain">Espanol</option>
+													<option value="bangladesh" data-class="flag-bd">Bengali</option>
+												</select>
+											</div>
+
+					  						<ul class="social-links list-inline pull-right">
+					  							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					  							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					  							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					  							<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+					  						</ul>
+					  					</div><!-- /.social-links -->
+				  					</div><!-- /.col-sm-6 -->
+				  				</div><!-- /.row -->
+				  			</div><!-- /.container -->
+				  		</nav><!-- /.top-bar -->
+
+				  		<div class="container mainnav">
+
+				  			<div class="navbar-header">
+		                        
+		                        <div id="search">
+							    <button type="button" class="close">×</button>
+							    <form>
+							        <input type="search" value="" placeholder="type keyword(s) here" />
+							        <button type="submit" class="btn btn-primary btn-lg">Chercher</button>
+							    </form>
+								</div>
+							</div>
+							<nav class="navbar navbar-default" role="navigation">
+									<span class="search-button visible-xs"><a href="#search"><i class="fa fa-search"></i></a></span>
+									
+									<!-- offcanvas-trigger -->
+				                        <button type="button" class="navbar-toggle collapsed" >
+				                          <span class="sr-only">Basculer la navigation</span>
+				                          <i class="fa fa-bars"></i>
+				                        </button>
+
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse navbar-collapse">
+
+						                <span class="search-button pull-right"><a href="#search"><i class="fa fa-search"></i></a></span>
+
+										<ul class="nav navbar-nav hidden-sm">
+											<li class="active"><a href="${ILINK1}">${ITEXT1}</a></li>
+											<li><a href="${ILINK2}">${ITEXT2}</a></li>
+
+	                                       <!-- Services -->
+											    <li class="dropdown"><a href="${ILINK3}">${ITEXT3} <b class="caret"></b></a>
+											        <!-- submenu-wrapper -->
+											        <div class="submenu-wrapper submenu-wrapper-topbottom">
+											            <div class="submenu-inner  submenu-inner-topbottom">
+											                <ul class="dropdown-menu">
+											                    <li><a href="${ILINK3}">${ITEXT3}</a></li>
+											                    <li><a href="${ILINK3}">${ITEXT3}</a></li>
+											                </ul>
+											            </div>
+											        </div>
+											        <!-- /submenu-wrapper -->
+											    </li>
+											<!-- /Services -->
+
+											<!-- Blog -->
+											    <li class="dropdown"><a href="${ILINK4}">${ITEXT4} <b class="caret"></b></a>
+											        <!-- submenu-wrapper -->
+											        <div class="submenu-wrapper submenu-wrapper-topbottom">
+											            <div class="submenu-inner  submenu-inner-topbottom">
+											                <ul class="dropdown-menu">
+											                    <li><a href="${ILINK4}">${ITEXT4}</a></li>
+											                    <li><a href="${ILINK4}">${ITEXT4}</a></li>
+											                </ul>
+											            </div>
+											        </div>
+											        <!-- /submenu-wrapper -->
+											    </li>
+											<!-- /Blog -->
+											<li><a href="${ILINK5}">${ITEXT5}</a></li>
+											<li><a href="${ILINK6}">${ITEXT6}</a></li>
+										</ul>
+									</div><!-- /.navbar-collapse -->
+									
+							</nav>
+						</div><!-- /.container -->
+					</header>
+
+                    <div id="main-carousel" class="carousel slide hero-slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#main-carousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/banniere.jpg" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">APPELEZ-NOUS AUJOURD'HUI</small>
+                                        <div class="phone animated lightSpeedIn"><a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a></div>
+                                        <h1 class="animated lightSpeedIn">${title1} <br>${title2}</h1>
+
+                                        <p class="lead animated lightSpeedIn">${desc1}</p>
+
+                                        <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
+                                </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="item">
+                                <img src="img/banniere.jpg" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+
+                                        <h1 class="animated bounceIn">${title3} <br>${title4}</h1>
+
+                                        <p class="lead animated lightSpeedIn">${desc2}</p>
+
+                                        <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
+                                    </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+                        </div>
+                        <!--.carousel-inner-->
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- #main-carousel-->
+
+			        <!-- services start -->
+					<section class="service-wrap">
+						
+						<!-- Controls will work for desktop and large devices -->
+					  	<div class="slider-control hidden-sm hidden-xs">
+							<a class="left carousel-control" href="#service-carousel" role="button" data-slide="prev">
+							    <span class="flaticon-previous11" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#service-carousel" role="button" data-slide="next">
+							    <span class="flaticon-next15" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div><!--/.slider-control -->
+
+			            <div class="container">
+			              	<div class="row">
+			              		<div class="col-md-4 col-sm-12">
+			              			<div class="service-left-box">
+						              	<div class="section-heading">
+						                  <h2 class="section-title">${title5}</h2>
+						                  <span class="section-sub">${title6}</span>
+						                </div> <!--section-header-->
+
+						                <div class="service-intro">
+						                	 <p>${desc3}</p>
+						                </div><!--/.service-intro-->
+					                </div><!-- /.service-left-box -->
+				               </div><!-- /.col -->
+				               <div class="col-md-8 col-sm-12">
+				              		<div id="service-carousel" class="carousel slide">
+				              			<!-- Controls
+				              			will work for small devices -->
+				              			
+									  	<div class="slider-control visible-sm visible-xs">
+											<a class="left carousel-control" href="#service-carousel" role="button" data-slide="prev">
+											    <span class="flaticon-previous11" aria-hidden="true"></span>
+											    <span class="sr-only">Previous</span>
+											</a>
+											<a class="right carousel-control" href="#service-carousel" role="button" data-slide="next">
+											    <span class="flaticon-next15" aria-hidden="true"></span>
+											    <span class="sr-only">Next</span>
+											</a>
+										</div><!--/.slider-control -->
+
+									  <!-- Wrapper for slides -->
+									  	<div class="carousel-inner" role="listbox">
+									    	<div class="item active">
+									    		<div class="row">
+									    			<div class="col-sm-6 col-xs-12">
+											    		<div class="service-content">
+												    		<h3>${title7}<br><span>${title8}</span></h3>
+												    		<div class="service-thumb">
+												    			<img class="img-responsive" src="img/apple-touch-icon-152x152.png" alt="image"/>
+												    		</div>	
+												    		<p>${desc4}</p>
+												    		<a class="btn btn-primary" href="#">Continuer la lecture<i class="fa fa-long-arrow-right"></i></a>
+											    		</div><!-- /.service-content -->
+										    		</div><!--/.col -->
+											    	<div class="col-sm-6 col-xs-12">
+												    	<div class="service-content">
+												    		<h3>${title9}<br><span>${title10}</span></h3>
+												    		<div class="service-thumb">
+												    			<img class="img-responsive" src="img/apple-touch-icon-152x152.png" alt="image"/>
+												    		</div>	
+												    		<p>${desc5}</p>
+												    		<a class="btn btn-primary" href="#">Continuer la lecture<i class="fa fa-long-arrow-right"></i></a>
+												    	</div><!-- /.service-content -->
+											    	</div><!--/.col-->
+									    		</div>
+									    	</div><!--/.item -->
+									    	<div class="item">
+										    	<div class="row">
+										    		<div class="col-sm-6 col-xs-12">
+												    	<div class="service-content">
+												    		<h3>${title11}<br><span>${title12}</span></h3>
+												    		<div class="service-thumb">
+												    			<img class="img-responsive" src="img/apple-touch-icon-152x152.png" alt="image"/>
+												    		</div>	
+												    		<p>${desc6}</p>
+												    		<a class="btn btn-primary" href="#">Continuer la lecture<i class="fa fa-long-arrow-right"></i></a>
+												    	</div><!-- /.service-content -->
+											    	</div><!--/.col-->
+											    	<div class="col-sm-6 col-xs-12">
+												    	<div class="service-content">
+												    		<h3>${title13}<br><span>${title14}</span></h3>
+												    		<div class="service-thumb">
+												    			<img class="img-responsive" src="img/apple-touch-icon-152x152.png" alt="image"/>
+												    		</div>	
+												    		<p>${desc7}</p>
+												    		<a class="btn btn-primary" href="#">Continuer la lecture<i class="fa fa-long-arrow-right"></i></a>
+												    	</div><!-- /.service-content -->
+											    	</div><!--/.col-->
+										    	</div><!--/.row-->
+									    	</div><!--/.item-->
+									    
+										</div>
+									</div><!-- /.carousel -->
+				               </div><!--/.col-->
+			                </div><!-- /.row -->
+			            </div><!-- /.container -->
+			        </section>
+			        <!-- services end -->
+
+			        <!-- About-us-wrap -->	
+			        <section class="about-us-wrap section-padding">
+			        	<div class="container">
+			        		<div class="row">
+			        			<div class="col-sm-4 col-xs-12">
+			        				<div class="about-us-content">
+			        					<h3>${title15}</h3>
+			        					<div class="about-content-block">
+				        					<span>${title16}</span>
+				        					<p>${desc8}</p>
+			        					</div>
+			        					<br>
+			        					<div class="about-content-block">
+				        					<span>${title17}</span>
+				        					<p>${desc9}</p>
+			        					</div>
+			        				</div><!-- /about-us-content -->
+			        			</div><!--/.col-->
+
+			        			<div class="col-sm-4 col-xs-12">
+			        				<div class="about-us-content">
+			        					<h3>${title18}</h3>
+			        					<div class="about-content-block">
+				        					<span>${title19}</span>
+				        					<p>${desc10}</p>
+			        					</div>
+			        					<br>
+			        					<div class="about-content-block">
+				        					<span>${title20}</span>
+				        					<p>${desc10}</p>
+			        					</div>
+			        				</div><!-- /about-us-content -->
+			        			</div><!-- /.col-->
+
+			        			<!--<div class="col-sm-4 col-xs-12">
+			        				<div class="about-us-content capabilities">
+			        					<div class="about-content-block">
+				        					<h3>Nos capacités</h3>
+				        					<ul>
+				        						<li>${title21}</li>
+				        						<li>${title22}</li>
+				        						<li>${title23}</li>
+				        						<li>${title24}</li>
+				        						<li>${title25}</li>
+				        					</ul>
+			        					</div>
+			        					
+			        				</div> /about-us-content 
+			        			</div>-->
+								<!--/.col-->
+			        		</div><!-- /.row -->
+			        	</div><!-- /.container -->
+
+			        </section>
+			        <!-- /About-us-wrap -->
+
+			        <!-- featuer-wrap start -->
+			        <section class="feature-wrap section-padding" 
+			            data-stellar-background-ratio="0.5">
+
+				        <div class="container center">
+				        	<div class="row">
+				        		<div class="col-xs-12">
+				        			<div class="feature-content" >
+				        				<h2>${title26}<br><span>${title27}
+				        					</span>
+				        				</h2>
+				        				<div>	
+					        				<p>${desc11}</p>
+				        				</div>
+				        				<a data-toggle="modal" data-target="#quoteModal" href="#" class="btn btn-primary quote-btn btn-lg">Get a Quote <i class="fa fa-long-arrow-right"></i></a>
+
+				        				<!-- Modal -->
+										<div class="modal fade" id="quoteModal"			tabindex="-1" role="dialog" 
+											aria-labelledby="quoteModalLabel" aria-hidden="true">
+
+										  	<div class="modal-dialog modal-lg">
+											    <div class="modal-content">
+											      	<div class="modal-header">
+												        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												        <h3 class="modal-title" id="quoteModalLabel">${title28}</h3>
+											      	</div>
+
+											      	<div class="modal-body">
+														<form id="contactForm" action="sendemail.php" method="POST">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="form-group">
+																    <label for="name">Prénom</label>
+																    <input id="name" name="name" type="text" class="form-control"  required="" placeholder="">
+																</div>
+															</div>
+															<div class="col-md-6">
+															  <div class="form-group">
+															    <label for="company">Nom de la compagnie</label>
+															    <input id="company" name="company" type="text" class="form-control" placeholder="">
+															  </div>
+															</div>
+														</div><!--/.row-->
+
+														<div class="row">
+															<div class="col-md-6">
+															  <div class="form-group">
+															    <label for="phone">Numéro de téléphone</label>
+															    <input id="phone" name="phone" type="text" class="form-control" placeholder="">
+															  </div>
+															</div>
+															<div class="col-md-6">
+															  <div class="form-group">
+															    <label for="email">Adresse e-mail</label>
+															    <input id="email" name="email" type="email" class="form-control" required="" placeholder="">
+															  </div>
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="col-md-6">
+															  <div class="form-group">
+															    <label for="city">Nom de Ville</label>
+															    <input id="city" name="city" type="text" class="form-control" placeholder="">
+															  </div>
+															</div>
+															<div class="col-md-6">
+															  <div class="form-group">
+															    <label for="subject">Assujettir</label>
+															    <input id="subject" name="subject" type="text" class="form-control" required="" placeholder="">
+															  </div>
+															</div>
+														</div>
+														<div class="form-group text-area">
+															<label for="message">Votre message</label>
+															<textarea id="message" name="message" class="form-control" rows="6" required="" placeholder=""></textarea>
+														</div>
+
+														<button type="submit" class="btn btn-primary btn-lg">Envoyer le message</button>
+													</form>
+											      </div>
+											    </div><!--/.modal-content-->
+										  	</div><!--/.modal-dialog-->
+										</div><!-- Modal END -->
+
+				        			</div><!--/.feature-content-->
+				        		</div><!--/.col-->
+				        
+				        	</div><!-- /.row -->
+				        </div><!-- .container -->
+			        </section>
+			        <!-- featuer-wrap end -->
+
+			         <!-- portfolio-section start -->
+					<section class="fleets-wrap">
+			            <div class="container">
+			              	<div class="section-heading">
+			                  <h2 class="section-title">${title29}</h2>
+				            </div> <!--section-heading-->
+				        </div><!--/.container-->
+
+				        <div class="container-fluid">
+				        	<div class="no-padding">
+					            <div class="row">
+					              	<div class="col-md-12">
+										<div class="owl-carousel fleet-carousel">
+										    <div class="item">
+										    	<div class="owl-item-thumb">
+										    		<img src="img/apple-touch-icon-120x120.png" alt="">
+										    		<div class="owl-item-overlay"></div>
+											    	<a class="img-link" href="img/apple-touch-icon-120x120.png"><img src="img/zoomin.png" alt="+"/></a>
+										    	</div><!-- owl-item-thumb -->
+										    	<div class="owl-tem-content">
+											    	<h3><a href="#">${title30}</a></h3>
+											    	<p>${title31}</p>
+										    	</div><!-- owl-item-content -->
+										    </div><!-- /item -->
+
+										    <div class="item">
+										    	<div class="owl-item-thumb">
+										    		<img src="img/apple-touch-icon-120x120.png" alt="">
+										    		<div class="owl-item-overlay"></div>
+											    	<a class="img-link" href="img/apple-touch-icon-120x120.png"><img src="img/zoomin.png" alt="+"/></a>
+										    	</div><!-- owl-item-thumb -->
+										    	<div class="owl-tem-content">
+											    	<h3><a href="#">${title32} </a></h3>
+											    	<p>${title33}</p>
+										    	</div><!-- owl-item-content -->
+										    </div><!-- /item -->
+
+										    <div class="item">
+										    	<div class="owl-item-thumb">
+										    		<img src="img/apple-touch-icon-120x120.png" alt="">
+										    		<div class="owl-item-overlay"></div>
+											    	<a class="img-link" href="img/apple-touch-icon-120x120.png"><img src="img/zoomin.png" alt="+"/></a>
+										    	</div><!-- owl-item-thumb -->
+										    	<div class="owl-tem-content">
+											    	<h3><a href="#">${title34}</a></h3>
+											    	<p>${title35}</p>
+										    	</div><!-- owl-item-content -->
+										    </div><!-- /item -->
+
+										    <div class="item">
+										    	<div class="owl-item-thumb">
+										    		<img src="img/apple-touch-icon-120x120.png" alt="">
+										    		<div class="owl-item-overlay"></div>
+											    	<a class="img-link" href="img/apple-touch-icon-120x120.png"><img src="img/zoomin.png" alt="+"/></a>
+										    	</div><!-- owl-item-thumb -->
+										    	<div class="owl-tem-content">
+											    	<h3><a href="#">${title36}</a></h3>
+											    	<p>${title37}</p>
+										    	</div><!-- owl-item-content -->
+										    </div><!-- /item -->
+
+										    <div class="item">
+										    	<div class="owl-item-thumb">
+										    		<img src="img/apple-touch-icon-120x120.png" alt="">
+										    		<div class="owl-item-overlay"></div>
+											    	<a class="img-link" href="img/apple-touch-icon-120x120.png"><img src="img/zoomin.png" alt="+"/></a>
+										    	</div><!-- owl-item-thumb -->
+										    	<div class="owl-tem-content">
+											    	<h3><a href="#">${title38}</a></h3>
+											    	<p>${title39}</p>
+										    	</div><!-- owl-item-content -->
+										    </div><!-- /item -->
+
+										    <div class="item">
+										    	<div class="owl-item-thumb">
+										    		<img src="img/apple-touch-icon-120x120.png" alt="">
+										    		<div class="owl-item-overlay"></div>
+											    	<a class="img-link" href="img/apple-touch-icon-120x120.png"><img src="img/zoomin.png" alt="+"/></a>
+										    	</div><!-- owl-item-thumb -->
+										    	<div class="owl-tem-content">
+											    	<h3><a href="#">${title40}</a></h3>
+											    	<p>${title41}</p>
+										    	</div><!-- owl-item-content -->
+										    </div><!-- /item -->
+
+										    <div class="item">
+										    	<div class="owl-item-thumb">
+										    		<img src="img/apple-touch-icon-120x120.png" alt="">
+										    		<div class="owl-item-overlay"></div>
+											    	<a class="img-link" href="img/apple-touch-icon-120x120.png"><img src="img/zoomin.png" alt="+"/></a>
+										    	</div><!-- owl-item-thumb -->
+										    	<div class="owl-tem-content">
+											    	<h3><a href="#">${title42}</a></h3>
+											    	<p>${title43}</p>
+										    	</div><!-- owl-item-content -->
+										    </div><!-- /item -->
+										    <div class="item">
+										    	<div class="owl-item-thumb">
+										    		<img src="img/apple-touch-icon-120x120.png" alt="">
+										    		<div class="owl-item-overlay"></div>
+											    	<a class="img-link" href="img/apple-touch-icon-120x120.png"><img src="img/zoomin.png" alt="+"/></a>
+										    	</div><!-- owl-item-thumb -->
+										    	<div class="owl-tem-content">
+											    	<h3><a href="#">${title44}</a></h3>
+											    	<p>${title45}</p>
+										    	</div><!-- owl-item-content -->
+										    </div><!-- /item -->
+										   
+										</div><!--/.owl-carousel-->
+
+										<!-- owl-carousel-control -->
+								        <div class="fleet-carousel-navigation 
+								            slider-control">
+								            <span class="prev left"><i class="flaticon-previous11"></i></span>
+								            <span class="next right"><i class="flaticon-next15"></i></span>
+								        </div>
+
+					              	</div><!-- /.col-md-12 -->
+
+					            </div><!-- /.row -->
+				            </div><!--/.no-padding-->
+			            </div><!-- /.container-fluid -->
+			        </section>
+			        <!-- fleets-wrap end -->
+
+			        <!-- Testimonial-wrap start -->
+			        <section class="testimonial-wrap">
+			        	<div class="container">
+			              	<div class="section-heading">
+			                  <h2 class="section-title">${title46}</h2>
+				            </div> <!--section-heading-->
+				        </div>
+
+				        <!-- testimonial-carousel-slider -->
+			        	<div id="Carousel" class="carousel slide carousel-fade">
+
+					        <div class="carousel-inner">
+					            <div class="item active">
+					                <div class="media">
+									    <div class="media-left">
+									    	<div class="item-left-thumb">
+											     <img class="img-responsive" src="img/apple-touch-icon-152x152.png" alt="client">
+											      	
+												<div class="author-info row row-flex row-flex-wrap">
+													<div class="col-xs-7">
+														<div class="author-name">
+															<span>${title47}</span><small>${title48}</small>
+														</div>
+													</div>
+													<div class="col-xs-5">
+														<img src="img/apple-touch-icon-152x152.png" alt="img">
+													</div>
+												</div>	
+											</div>
+									  	</div><!-- /.col -->
+
+										<div class="media-body">
+											<div class="item-right-text">
+											    ${desc12} 
+										    </div>
+										</div><!-- /.col -->
+									</div><!-- /.row -->
+									
+					            </div><!-- /item -->
+
+					            <div class="item">
+					                <div class="media">
+									    <div class="media-left">
+									    	<div class="item-left-thumb">
+											     <img class="img-responsive" src="img/apple-touch-icon-152x152.png" alt="client">
+											      	
+												<div class="author-info row row-flex row-flex-wrap">
+													<div class="col-xs-7">
+														<div class="author-name">
+															<span>${title49}</span><small>${title50}</small>
+														</div>
+													</div>
+													<div class="col-xs-5">
+														<img src="img/apple-touch-icon-152x152.png" alt="img">
+													</div>
+												</div>	
+											</div>
+									  	</div><!-- /.col -->
+
+										<div class="media-body">
+											<div class="item-right-text">
+											    ${desc13} 
+										    </div>
+										</div><!-- /.col -->
+									</div><!-- /.row -->
+									
+					            </div><!-- /item -->
+
+					        </div><!-- /carousel-inner -->
+					
+						</div><!-- /.carousel -->
+
+
+						<!-- carousel-controls -->
+				        <div class="slider-control">
+					        <a class="left carousel-control" href="#Carousel" data-slide="prev">
+					            <span class="flaticon-previous11"></span>
+					        </a>
+					        <a class="right carousel-control" href="#Carousel" data-slide="next">
+					            <span class="flaticon-next15"></span>
+					        </a>
+					    </div>
+
+			        </section>
+			        <!-- Testimonial-wrap end -->
+
+			        <!-- Pricing-wrap start -->
+			        <section class="pricing-wrap section-padding">
+			        	<div class="container">
+			        		<div class="section-heading">
+			                  <h2 class="section-title">${title51}</h2>
+				        	</div>
+				        	
+			        		<div class="row">
+			        			<div class="col-xs-12 col-sm-6 col-md-3">
+			        				<div class="no-padding">
+				        				<div class="pricing-table first-col">
+				        					<div class="pricing-header">
+				        						<div class="pricing-title">
+				        							${title52}
+				        						</div>
+				        						<div class="pricing-price">
+				        						<a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a>
+				        						</div>
+				        					</div><!-- /.pricing-header -->
+				        					<div class="pricing-desc pricing-cell">
+				        						${title53}
+				        					</div>
+				        				</div><!-- /.pricing-table -->
+			        				</div><!-- /.no-padding -->
+			        			</div><!-- /.col -->
+
+			        			<div class="col-xs-12 col-sm-6 col-md-3">
+			        				<div class="no-padding">
+				        				<div class="pricing-table second-col">
+				        					<div class="pricing-header">
+				        						<div class="pricing-title">
+				        							${title54}
+				        						</div>
+				        						<div class="pricing-price">
+				        						<a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a>
+				        						</div>
+				        					</div><!-- /.pricing-header -->
+				        					<div class="pricing-desc pricing-cell">
+				        						${title55}
+				        					</div>
+				        				</div><!-- /.pricing-table -->
+			        				</div><!-- /.no-padding -->
+
+			        			</div><!-- /.col -->
+
+			        			<div class="col-xs-12 col-sm-6 col-md-3">
+			        				<div class="no-padding">
+				        				<div class="pricing-table third-col">
+				        					<div class="pricing-header">
+				        						<div class="pricing-title">
+				        							${title56}
+				        						</div>
+				        						<div class="pricing-price">
+				        						<a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a>
+				        						</div>
+				        					</div><!-- /.pricing-header -->
+				        					<div class="pricing-desc pricing-cell">
+				        						${title57}
+				        					</div>
+				        				</div><!-- /.pricing-table -->
+			        				</div><!-- /.no-padding -->
+
+			        			</div><!-- /.col -->
+
+			        			<div class="col-xs-12 col-sm-6 col-md-3">
+			        				<div class="no-padding">
+				        				<div class="pricing-table fourth-col">
+				        					<div class="pricing-header">
+				        						<div class="pricing-title">
+				        							${title58}
+				        						</div>
+				        						<div class="pricing-price">
+				        						<a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a>
+				        						</div>
+				        					</div><!-- /.pricing-header -->
+				        					<div class="pricing-desc pricing-cell">
+				        						${title59}
+				        					</div>
+				        				</div><!-- /.pricing-table -->
+			        				</div><!-- /.no-padding -->
+			        			</div><!-- /.col -->
+
+			        		</div><!-- /.row -->
+
+			        		<div class="row">
+			        			<div class="no-padding">
+				        			<div class="col-xs-12">
+				        				<div class="pricing-footer text-center">
+				        					${title60}
+				        				</div>
+				        			</div>
+			        			</div>
+			        		</div><!--/.row-->
+			        	</div><!-- /.container -->
+
+			        </section>
+			        <!-- Pricing-wrap end -->
+
+			        <!-- footer-widget-section start -->
+			        <section class="footer-widget-section">
+			        	<div class="container">
+			        		<div class="row">
+			        			<div class="col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Sur</h3>
+			        					<p>
+			        						${desc14}
+			        					</p>
+			        					<br>
+
+										<address>
+										  <strong><a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a></strong>
+										  <br>
+										  <a href="#">${email}</a>
+										  <br>
+										  <br>
+										  <span class="map-marker">${ville}<br>${type}</span>
+										</address>
+
+										
+			        				</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-sm-4 -->
+
+			        			<div class="col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Liens utiles</h3>
+			        					<div class="row">
+			        						<div class="col-sm-6">
+					        					<ul class="quick-links">
+					        						<li><a href="${ILINK1}">${ITEXT1}</a></li>
+					        						<li><a href="${ILINK2}">${ITEXT2}</a></li>
+					        						<li><a href="${ILINK3}">${ITEXT3}</a></li>
+					        						<li><a href="${ILINK4}">${ITEXT4}</a></li>
+					        						<li><a href="${ILINK5}">${ITEXT5}</a></li>
+					        						<li><a href="${ILINK6}">${ITEXT6}</a></li>
+					        						<li><a href="${ILINK7}">${ITEXT7}</a></li>
+					        					</ul>
+			        						</div>
+			        						<div class="col-sm-6">
+					        					<ul class="quick-links">
+					        						<li><a href="${ILINK7}">${ITEXT7}</a></li>
+					        						<li><a href="${ILINK8}">${ITEXT8}</a></li>
+					        						<li><a href="${ILINK9}">${ITEXT9}</a></li>
+					        						<li><a href="${ILINK10}">${ITEXT10}</a></li>
+					        						<li><a href="${ILINK11}">${ITEXT11}</a></li>
+					        					</ul>
+			        						</div>
+			        					</div>
+			        				</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+
+			        			<div class="col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Reste en contact</h3>
+			        					<p>Entrez votre adresse email pour recevoir des nouvelles &amp; offres de nous</p>
+
+										<form class="newsletter-form">
+											<div class="form-group">
+												<label class="sr-only" for="InputEmail1">Adresse e-mail</label>
+												<input type="email" class="form-control" id="InputEmail1" placeholder="Votre adresse email">
+												<button type="submit" class="btn">Envoyer &nbsp;<i class="fa fa-angle-right"></i></button>
+											</div>
+										</form>		
+										<ul class="social-links list-inline">
+				  							<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+				  							<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+				  							<li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+				  							<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+						  				</ul>        				
+									</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+			        		</div><!-- /.row -->
+			        	</div><!-- /.container -->
+			        </section><!-- /.cta-section -->
+			        <!-- footer-widget-section end -->
+
+			        <!-- copyright-section start -->
+			        <footer class="copyright-section">
+			        	<div class="container">
+			        		<div class="copyright-info">
+            					<p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="tel:${tel.}" title="${ville} ${type} ${tel.}">${tel.}</a></p>
+			        		</div>
+			        	</div><!-- /.container -->
+			        </footer>
+			        <!-- copyright-section end -->
+	    		</div> <!-- .st-content -->
+		    </div> <!-- .st-pusher -->
+
+	    	<!-- OFFCANVAS MENU -->
+	    	<div class="offcanvas-menu offcanvas-effect">
+	    		<div class="offcanvas-wrap">
+			        <div class="off-canvas-header">
+			        	<button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">&times;</button>
+			        </div>
+			        <ul id ="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
+			            <li class="active"><a href="${ILINK1}">${ITEXT1}<span class="sr-only">(current)</span></a></li>
+			            <li><a href="about.html">About</a></li>
+			            <li>
+			            	<a href="${ILINK2}">${ITEXT2}</a>
+			            	<ul>
+			            		<li>
+			            			<a href="${ILINK2}">${ITEXT2}</a>
+			            		</li>
+			            		<li>
+			            			<a href="${ILINK1}">${ITEXT2}</a>
+			            		</li>
+			            	</ul>
+
+			            </li>
+			            <li><a href="${ILINK3}">${ITEXT3}</a>
+							<ul>
+			            		<li>
+			            			<a href="${ILINK3}">${ITEXT3}</a>
+			            		</li>
+			            		<li>
+			            			<a href="${ILINK3}">${ITEXT3}</a>
+			            		</li>
+			            	</ul>
+			            </li>
+			            <li><a href="${ILINK4}">${ITEXT4}</a></li>
+			            <li><a href="${ILINK5}">${ITEXT5}</a></li>
+			        </ul>
+			        <div class="offcanvas-widgets hidden-sm hidden-xs">
+				        <div id="twitterWidget">
+							<h2>Fil Twitter</h2>				    	
+							<div class="twitter-widget"></div>
+						</div>
+						<div class="newsletter-widget">
+							<h2>Reste en contact</h2>
+							<p>Entrez votre adresse email pour recevoir des nouvelles &amp; offres de nous</p>
+
+							<form class="newsletter-form">
+								<div class="form-group">
+									<label class="sr-only" for="InputEmail1">Adresse e-mail</label>
+									<input type="email" class="form-control" id="InputEmail2" placeholder="Votre adresse email">
+									<button type="submit" class="btn">Envoyer &nbsp;<i class="fa fa-angle-right"></i></button>
+								</div>
+							</form>		
+							       				
+						</div><!-- newsletter-widget -->
+					</div>
+
+				</div>
+	      	</div><!-- .offcanvas-menu -->
+		</div><!-- /st-container -->
+
+
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">
+				<div class="status-mes"></div>
+			</div>
+		</div>
+
+
+	    <!-- jQuery -->
+	    <script src="js/jquery.js"></script>
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="js/bootstrap.min.js"></script>
+		<!-- Scrolling Nav JavaScript -->
+	    <script src="js/jquery.easing.min.js"></script>
+	    
+	    <!-- owl.carousel -->
+	    <script src="owl.carousel/owl.carousel.min.js"></script>
+	    <!-- Magnific-popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Offcanvas Menu -->
+		<script src="js/hippo-offcanvas.js"></script>
+		<!-- stellar -->
+		<script src="js/jquery.stellar.js"></script>
+		<!-- classie -->
+		<script src="js/classie.js"></script>
+		<!-- sticky kit -->
+		<script src="js/jquery.sticky-kit.min.js"></script>
+		<!-- language select -->
+		<script src="js/selectFx.js"></script>
+		<!-- Twitter feed -->
+		<script src="js/twitterFetcher_min.js"></script>
+		<!-- Youtube Video-player -->
+	    <script src="js/jquery.mb.YTPlayer.js"></script>
+	    <!-- Custom Script -->
+	    <script src="js/scripts.js"></script>
+
+	</body>
+</html>
