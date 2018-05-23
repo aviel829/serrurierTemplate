@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- script
     ================================================== -->
@@ -59,9 +60,9 @@
             </a>
         </div>
 
-        <div class="text-center" style="margin-top: 15px;">
-            <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
-        </div>
+        <h1 class="text-center" style="margin-top: 15px;">
+            <a class="flip animated" href="tel:${tel.}" role="button">${tel.}</a>
+        </h1>
 
         <nav class="header-nav">
 
@@ -124,11 +125,9 @@
 
                 <div class="home-content__buttons">
                     <!--<a href="#contact" class="smoothscroll btn btn--stroke">-->
-                        <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
+                        <a class="btn btn-primary flip animated" href="tel:${tel.}" role="button">${tel.}</a>
                     <!--</a>-->
-                    <a href="#about" class="smoothscroll btn btn--stroke">
-                        More About Us
-                    </a>
+                    
                 </div>
 
             </div>
@@ -143,24 +142,6 @@
 
         </div> <!-- end home-content -->
 
-
-        <ul class="home-social">
-            <li>
-                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
-            </li>
-        </ul> 
         <!-- end home-social -->
 
     </section> <!-- end s-home -->
@@ -170,16 +151,16 @@
     ================================================== -->
     <section id='about' class="s-about">
 
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+        <div class="row section-header has-bottom-sep">
             <div class="col-full">
-                <h3 class="subhead subhead--dark">${title3}</h3>
-                <h1 class="display-1 display-1--light">${title4}</h1>
+                <h3 class="subhead subhead--dark flip animated">${title3}</h3>
+                <h1 class="display-1 display-1--light flip animated">${title4}</h1>
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row about-desc" data-aos="fade-up">
-            <div class="col-full">
-                <p>
+        <div class="row about-desc">
+            <div class="col-full flip animated">
+                <p class="flip animated">
                     ${desc3}
                 </p>
             </div>
@@ -210,6 +191,7 @@
 
     </section> <!-- end s-about -->
 
+    <br>
 
     <!-- services
     ================================================== -->
@@ -217,8 +199,8 @@
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">${title5}</h3>
-                <h1 class="display-2">${desc4}</h1>
+                <h3 class="subhead flip animated">${title5}</h3>
+                <h1 class="display-2 flip animated">${desc4}</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -293,6 +275,7 @@
 
     </section> <!-- end s-services -->
 
+    <br>
 
     <!-- works
     ================================================== -->
@@ -583,7 +566,7 @@
                     <div class="cinfo">
                         <h5>Phone</h5>
                         <p>
-                            <a class="" href="tel:${tel.}" role="button">${tel.}</a>
+                            <a href="tel:${tel.}" role="button">${tel.}</a>
                         </p>
                     </div>
 
@@ -615,13 +598,13 @@
 
     <!-- footer
     ================================================== -->
-    <footer>
+    <div style="background: white; font-family: 'montserrat-light', sans-serif; font-size: 15px; line-height: 2; padding-top: 25px;">
 
         <div class="row footer-main">
 
             <div class="col-six tab-full left footer-desc">
 
-                <div class="footer-logo"><a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a></div>
+                <div class="footer-logo"><a class="btn btn-primary flip animated" href="tel:${tel.}" role="button">${tel.}</a></div>
                 Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis un nec pellentesque, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
 
             </div>
@@ -633,7 +616,7 @@
 
                 <div class="subscribe-form">
                     <form id="mc-form" class="group" novalidate="true">
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Adresse e-mail" required="">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Adresse e-mail" required="" style="color: red; opacity: 1;">
                         <input type="submit" name="subscribe" value="Souscrire">
                         <label for="mc-email" class="subscribe-message"></label>
                     </form>
@@ -647,7 +630,7 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="tel:${tel.}" title="${ville} ${type} ${tel.}">${tel.}</a></p>
+                    <p class="copyright flip animated">Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="tel:${tel.}" title="${ville} ${type} ${tel.}">${tel.}</a></p>
                 </div>
 
                 <div class="go-top">
@@ -657,7 +640,7 @@
 
         </div> <!-- end footer-bottom -->
 
-    </footer> <!-- end footer -->
+    </div> <!-- end footer -->
 
 
     <!-- photoswipe background

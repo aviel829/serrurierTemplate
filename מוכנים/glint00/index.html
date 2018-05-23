@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/magic.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- script
     ================================================== -->
@@ -55,7 +57,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="images/apple-touch-icon.png" alt="Homepage">
+                <img class="fadeIn" src="images/apple-touch-icon.png" alt="Homepage">
             </a>
         </div>
 
@@ -116,7 +118,7 @@
 
             <div class="row home-content__main">
 
-                <h3>${title2}</h3>
+                <h3 class="twisterInUp">${title2}</h3>
 
                 <h1>
                    ${desc2}
@@ -179,7 +181,7 @@
 
         <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
-                <p>
+                <p class="fadeIn">
                     ${desc3}
                 </p>
             </div>
@@ -210,7 +212,296 @@
 
     </section> <!-- end s-about -->
 
-<!-- contact
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">${title5}</h3>
+                <h1 class="display-2">${desc4}</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-down">
+                <div class="service-icon">
+                    <i class="icon-paint-brush"></i>
+                </div>
+                <div class="fadeIn">
+                    <h3 class="h2">${title6}</h3>
+                    <p>
+                        ${desc5}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-down">
+                <div class="service-icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="fadeIn">
+                    <h3 class="h2">${title7}</h3>
+                    <p>${desc6}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-down">
+                <div class="service-icon">
+                    <i class="icon-megaphone"></i>
+                </div>  
+                <div class="">
+                    <h3 class="h2">${title8}</h3>
+                    <p>${desc7}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-down">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
+                </div>
+                <div class="">
+                    <h3 class="h2">${title9}</h3>
+                    <p>${desc8}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-down">
+                <div class="service-icon">
+                    <i class="icon-cube"></i>
+                </div>
+                <div class="">
+                    <h3 class="h2">${title10}</h3>
+                    <p>${desc9}
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block service-item" data-aos="fade-down">
+                <div class="service-icon"><i class="icon-lego-block"></i></div>
+                <div class="">
+                    <h3 class="h2">${title11}</h3>
+                    <p>${desc10}
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+
+        <div class="intro-wrap">
+                
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-down">
+                <div class="col-full">
+                    <h3 class="subhead">${title12}</h3>
+                    <h1 class="display-2 display-2--light">${desc11}</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    ${title13}
+                                </h3>
+                                <p class="item-folio__cat">
+                                    ${title14}
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>${desc12}</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    ${title15}
+                                </h3>
+                                <p class="item-folio__cat">
+                                    ${title16}
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>${desc13}</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    ${title17}
+                                </h3>
+                                <p class="item-folio__cat">
+                                    ${title18}
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>${desc14}</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    ${title19}
+                                </h3>
+                                <p class="item-folio__cat">
+                                    ${title20}
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>${desc15}</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    ${title21}
+                                </h3>
+                                <p class="item-folio__cat">
+                                     ${title22}
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>${desc16}</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/apple-touch-icon-152x152.png" class="thumb-link text-center" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/apple-touch-icon-152x152.png" 
+                                         srcset="images/apple-touch-icon-152x152.png 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    ${title23}
+                                </h3>
+                                <p class="item-folio__cat">
+                                     ${title24}
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>${desc17}</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+
+    <!-- contact
     ================================================== -->
     <section id="contact" class="s-contact">
 
@@ -293,8 +584,8 @@
 
                     <div class="cinfo">
                         <h5>Phone</h5>
-                        <p>
-                            <a class="" href="tel:${tel.}" role="button">${tel.}</a>
+                        <p class="jello animated">
+                            <a href="tel:${tel.}" role="button">${tel.}</a>
                         </p>
                     </div>
 
@@ -323,87 +614,6 @@
 
     </section> <!-- end s-contact -->
 
-    <!-- services
-    ================================================== -->
-    <section id='services' class="s-services">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">${title5}</h3>
-                <h1 class="display-2">${desc4}</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-paint-brush"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">${title6}</h3>
-                    <p>
-                        ${desc5}
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-group"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">${title7}</h3>
-                    <p>${desc6}
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-megaphone"></i>
-                </div>  
-                <div class="service-text">
-                    <h3 class="h2">${title8}</h3>
-                    <p>${desc7}
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-earth"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">${title9}</h3>
-                    <p>${desc8}
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-cube"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">${title10}</h3>
-                    <p>${desc9}
-                    </p>
-                </div>
-            </div>
-    
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon"><i class="icon-lego-block"></i></div>
-                <div class="service-text">
-                    <h3 class="h2">${title11}</h3>
-                    <p>${desc10}
-                    </p>
-                </div>
-            </div>
-
-        </div> <!-- end services-list -->
-
-    </section> <!-- end s-services -->
 
     <!-- footer
     ================================================== -->
@@ -411,12 +621,18 @@
 
         <div class="row footer-main">
 
-            <div class="col-six tab-full left footer-desc" style="text-align: -webkit-center;">
+            <div class="col-six tab-full left footer-desc">
 
-                <div class="footer-logo"><a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a></div>
+                <div class="footer-logo"><a class="btn btn-primary jello animated" href="tel:${tel.}" role="button">${tel.}</a></div>
+                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis un nec pellentesque, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+
             </div>
 
             <div class="col-six tab-full right footer-subscribe">
+
+                <h4>Recevez une notification</h4>
+                <p>Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.</p>
+
                 <div class="subscribe-form">
                     <form id="mc-form" class="group" novalidate="true">
                         <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Adresse e-mail" required="">
@@ -433,7 +649,7 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="tel:${tel.}" title="${ville} ${type} ${tel.}">${tel.}</a></p>
+                    <p class="copyright jello animated">Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="tel:${tel.}" title="${ville} ${type} ${tel.}">${tel.}</a></p>
                 </div>
 
                 <div class="go-top">

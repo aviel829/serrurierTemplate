@@ -1388,7 +1388,7 @@
   }
 }
 
-.fadeInDownBig {
+.fadeInDownBig:hover {
   -webkit-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
 }
@@ -1922,7 +1922,7 @@
   }
 }
 
-.animated.flip {
+.animated.flip:hover {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;

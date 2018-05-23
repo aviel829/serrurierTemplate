@@ -43,6 +43,7 @@
 	    <link href="css/menu.css" rel="stylesheet">
 	    <!-- Custom CSS -->
 	    <link href="css/style.css" rel="stylesheet">
+	    <link href="css/animate.css" rel="stylesheet">
 	    <!-- Responsive CSS -->
 	    <link href="css/responsive.css" rel="stylesheet">
 
@@ -75,7 +76,7 @@
 
 				  					<div class="col-sm-4 col-xs-12">
 					  					<div class="logo text-center">
-					  						<h1><a href="index.html"><img src="img/apple-touch-icon-72x72.png" alt=""></a><span>${MainType}</span></h1>
+					  						<h1><a href="index.html"><img class="flip animated" src="img/apple-touch-icon-72x72.png" alt=""></a><span>${MainType}</span></h1>
 					  					</div>
 				  					</div>
 
@@ -187,10 +188,10 @@
                                 <div class="container">
                                     <div class="carousel-caption">
                                         <small class="animated fadeIn">APPELEZ-NOUS AUJOURD'HUI</small>
-                                        <div class="phone animated lightSpeedIn"><a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a></div>
-                                        <h1 class="animated lightSpeedIn">${title1} <br>${title2}</h1>
+                                        <div class="phone rollIn animated"><a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a></div>
+                                        <h1 class="rollIn animated">${title1} <br>${title2}</h1>
 
-                                        <p class="lead animated lightSpeedIn">${desc1}</p>
+                                        <p class="lead rollIn animated">${desc1}</p>
 
                                         <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
                                 </div>
@@ -253,7 +254,7 @@
 			              		<div class="col-md-4 col-sm-12">
 			              			<div class="service-left-box">
 						              	<div class="section-heading">
-						                  <h2 class="section-title">${title5}</h2>
+						                  <h2 class="section-title rollIn animated">${title5}</h2>
 						                  <span class="section-sub">${title6}</span>
 						                </div> <!--section-header-->
 
@@ -808,7 +809,7 @@
 			        					<br>
 
 										<address>
-										  <strong><a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a></strong>
+										  <strong class=""><a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a></strong>
 										  <br>
 										  <a href="#">${email}</a>
 										  <br>
@@ -877,7 +878,7 @@
 			        <footer class="copyright-section">
 			        	<div class="container">
 			        		<div class="copyright-info">
-            					<p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="tel:${tel.}" title="${ville} ${type} ${tel.}">${tel.}</a></p>
+            					<p class="copyright fadeIn animated">Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="tel:${tel.}" title="${ville} ${type} ${tel.}">${tel.}</a></p>
 			        		</div>
 			        	</div><!-- /.container -->
 			        </footer>

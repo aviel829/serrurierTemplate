@@ -1061,7 +1061,7 @@ Copyright (c) 2014 Daniel Eden
   100% {opacity: 1;}
 }
 
-.fadeIn {
+.fadeIn:hover {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
 }
@@ -1950,7 +1950,7 @@ Copyright (c) 2014 Daniel Eden
   }
 }
 
-.lightSpeedIn {
+.lightSpeedIn:hover {
   -webkit-animation-name: lightSpeedIn;
           animation-name: lightSpeedIn;
   -webkit-animation-timing-function: ease-out;
