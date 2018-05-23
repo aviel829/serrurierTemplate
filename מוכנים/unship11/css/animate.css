@@ -268,7 +268,7 @@ Copyright (c) 2014 Daniel Eden
   }
 }
 
-.shake {
+.shake:hover {
   -webkit-animation-name: shake;
           animation-name: shake;
 }
