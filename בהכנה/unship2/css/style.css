@@ -1017,3 +1017,31 @@ CONTACT PAGE
 .office-locations address span {
   display: block;
 }
+
+/*FOCUS*/
+.focus {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.focus:hover {
+  border: 70px solid dimgray;
+  border-radius: 50%;
+}
+
+/*FOCUS*/
+.minfocus {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.minfocus:hover {
+  border: 30px solid dimgray;
+  border-radius: 20%;
+}
