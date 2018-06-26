@@ -1,48 +1,12 @@
-<!-- <?php 
-if(isset($_POST['submit'])){
-    $to = "aviel829@gmail.com"; // this is your Email address
-    $from = $_POST['Email']; // this is the sender's Email address
-    $first_name = $_POST['name'];
-    $subject = $_POST['Subject'];
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['Message'];
-
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
-?> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<title>${title}</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel='stylesheet' id='camera-css' href='css/camera.css' type='text/css' media='all'>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>${title}</title>
 
-	<link rel="stylesheet" type="text/css" href="css/slicknav.css">
-	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8"
-	/>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-
-
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/camera.min.js"></script>
-	<script type="text/javascript" src="js/myscript.js"></script>
-	<script src="js/sorting.js" type="text/javascript"></script>
-	<script src="js/jquery.isotope.js" type="text/javascript"></script>
-
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 
 		<meta name="dcterms.creator" content="${mainUrl}">
 		<meta name="dcterms.subject" content="${Type}">
@@ -53,957 +17,652 @@ if(isset($_POST['submit'])){
 		<meta name="geo.placename" content="${ville}">
 		<meta name="geo.position" content="${latitude};${longitude}">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,100" rel="stylesheet" type="text/css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--script type="text/javascript" src="js/jquery.nav.js"></script-->
+	    
+	    <!-- Web Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,400italic,700,700italic,900,900italic,500italic' rel='stylesheet' type='text/css'>
+       	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	    <!-- Flaticon CSS -->
+	    <link href="fonts/flaticon/flaticon.css" rel="stylesheet">
+	    <!-- font-awesome CSS -->
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+	    <!-- Offcanvas CSS -->
+	    <link href="css/off-canvas.css" rel="stylesheet">
+	    <!-- animate CSS -->
+	    <link href="css/animate.css" rel="stylesheet">
+	    <!-- language CSS -->
+	    <link href="css/language-select.css" rel="stylesheet">
+	    <!-- owl.carousel CSS -->
+	    <link href="owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+		<!-- magnific-popup -->
+    	<link href="css/magnific-popup.css" rel="stylesheet">
+	    <!-- Bootstrap Core CSS -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Template Core Styles -->
+	    <link href="css/template.css" rel="stylesheet">
+	    <!-- Main Menu Styles -->
+	    <link href="css/menu.css" rel="stylesheet">
+	    <!-- Custom CSS -->
+	    <link href="css/style.css" rel="stylesheet">
+	    <!-- Responsive CSS -->
+	    <link href="css/responsive.css" rel="stylesheet">
+
+	    <script src="js/vendor/modernizr-2.8.1.min.js"></script>
+	    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+		    <script src="js/vendor/html5shim.js"></script>
+		    <script src="js/vendor/respond.min.js"></script>
+	    <![endif]-->
+	</head>
 
 
-	<script>
-		jQuery(function () {
-			jQuery('#camera_wrap_1').camera({
-				transPeriod: 500,
-				time: 3000,
-				height: '490px',
-				thumbnails: false,
-				pagination: true,
-				playPause: false,
-				loader: false,
-				navigation: false,
-				hover: false
-			});
-		});
-	</script>
+	<body id="page-top">
+		<div id="st-container" class="st-container">
+		    <div class="st-pusher">
+	        	<div class="st-content">
+					<header class="header">
+				  		<nav class="top-bar">
+				  			<div class="container">
+				  				<div class="row">
+				  					<div class="col-sm-4 col-xs-12">
+					  					<div class="call-to-action">
+					  						<ul class="list-inline">
+					  							<li><a href="#"><strong><a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a></strong></a></li>
+					  							<li><a href="#"><strong>${email}</strong></a></li>
+					  						</ul>
+					  					</div><!-- /.call-to-action -->
+				  					</div><!-- /.col-sm-6 -->
 
+				  					<div class="col-sm-4 col-xs-12">
+					  					
+				  					</div>
 
+				  					<div class="col-sm-4">
+					  					<div class="logo text-right hidden-xs">
+					  						<h1><a href="index.html"><img class="minfocus" src="img/apple-touch-icon-72x72.png" alt=""></a><span>${MainType}</span></h1>
+					  					</div>
+										  <div class="logo text-center hidden-sm hidden-md hidden-lg">
+					  						<h1><a href="index.html"><img src="img/apple-touch-icon-72x72.png" alt=""></a><span>${MainType}</span></h1>
+					  					</div>
+				  					</div><!-- /.col-sm-6 -->
+				  				</div><!-- /.row -->
+				  			</div><!-- /.container -->
+				  		</nav><!-- /.top-bar -->
 
-	<!-- Google Maps Api -->
-	<style>
-		html,
-		body,
-		#map-canvas {
-			width: 100%;
-			height: 100%;
-			margin: 0px;
-			padding: 0px
-		}
-	</style>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-	<script>
-		//global variables 
-		var geocoder;
-		var map;
-		var Ireland = "Paris";
+				  		<div class="container mainnav">
 
-		function initialize() {
-			geocoder = new google.maps.Geocoder();
-			var latlng = new google.maps.LatLng(48.864716, 2.349014);
-			var mapOptions =
-				{
-					zoom: 8,
-					center: latlng
-				}
-			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-			codeAddress(Ireland);//call the function
-		}
-
-		function codeAddress(address) {
-			geocoder.geocode({ address: address }, function (results, status) {
-				if (status == google.maps.GeocoderStatus.OK) {
-					map.setCenter(results[0].geometry.location);//center the map over the result
-					//place a marker at the location
-					var marker = new google.maps.Marker(
-						{
-							map: map,
-							position: results[0].geometry.location
-						});
-				} else {
-					alert('Geocode was not successful for the following reason: ' + status);
-				}
-			});
-		}
-
-		function codeAddress() {
-			var address = document.getElementById("Ireland").value;
-			geocoder.geocode({ "Ireland": address }, function (results, status) {
-				if (status == google.maps.GeocoderStatus.OK) {
-					map.setCenter(results[0].geometry.location);//center the map over the result
-					//place a marker at the location
-					var marker = new google.maps.Marker(
-						{
-							map: map,
-							position: results[0].geometry.location
-						});
-				} else {
-					alert('Geocode was not successful for the following reason: ' + status);
-				}
-			});
-		}
-
-		google.maps.event.addDomListener(window, 'load', initialize);
-
-	</script>
-</head>
-
-<body>
-
-	<!--home start-->
-
-	<div id="home" class="row">
-		<div class="headerLine">
-			<div class="fixed transbg">
-				<div class="container">
-					<div class="row">
-						<div class="logo col-md-2">
-							<div>
-								<a href="#">
-									<img src="images/apple-touch-icon.png">
-								</a>
-							</div>
-						</div>
-						<div class="telmenu col-md-4">
-                			<a class="" href="tel:${tel.}" role="button">${tel.}</a>                
-						</div>
-						<div class="col-md-6">
-							<div class="navmenu" style="text-align: center;">
-								<ul id="menu">
-									<li class="active">
-										<a href="${ILINK1}">${ITEXT1}</a>
-									</li>
-									<li>
-										<a href="${ILINK2}">${ITEXT2}</a>
-									</li>
-									<li>
-										<a href="${ILINK3}">${ITEXT3}</a>
-									</li>
-									<li>
-										<a href="${ILINK4}">${ITEXT4}</a>
-									</li>
-									<li class="last">
-										<a href="${ILINK5}">${ITEXT5}</a>
-									</li>
-									<!--li><a href="#features">Features</a></li-->
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row wrap">
-					<div class="col-md-12 gallery">
-						<div class="camera_wrap camera_white_skin" id="camera_wrap_1">
-							<div data-thumb="" data-src="images/slides/blank.gif">
-								<div class="img-responsive camera_caption fadeFromBottom">
-									<h2 class="col-xs-12">
-										<img src="images/TELicon.png">
-                						<a class="btn btn-primary swing animated" href="tel:${tel.}" role="button">${tel.}</a>                
-									</h2>
-									<div>
-										<a href="#">
-
-										</a>
-									</div>
+				  			<div class="navbar-header">
+		                        
+		                        <div id="search">
+							    <button type="button" class="close">×</button>
+							    <form>
+							        <input type="search" value="" placeholder="type keyword(s) here" />
+							        <button type="submit" class="btn btn-primary btn-lg">Chercher</button>
+							    </form>
 								</div>
 							</div>
-							<div data-thumb="" data-src="images/slides/blank.gif">
-								<div class="img-responsive camera_caption fadeFromBottom">
-									<h2>
-										<img src="images/TELicon.png">
-                						<a class="" href="tel:${tel.}" role="button">${tel.}</a>
-									</h2>
+							<nav class="navbar navbar-default" role="navigation"  style="border-radius: 30px !important;">
+									<span class="search-button visible-xs"><a href="#search"><i class="fa fa-search"></i></a></span>
+									
+									<!-- offcanvas-trigger -->
+				                        <button type="button" class="navbar-toggle collapsed" >
+				                          <span class="sr-only">Basculer la navigation</span>
+				                          <i class="fa fa-bars"></i>
+				                        </button>
+
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse navbar-collapse">
+
+						                <span class="search-button pull-right"><a href="#search"><i class="fa fa-search"></i></a></span>
+
+										<ul class="nav navbar-nav hidden-sm">
+											<li class="active"><a href="${ILINK1}">${ITEXT1}</a></li>
+											<li><a href="${ILINK2}">${ITEXT2}</a></li>
+
+	                                       <!-- Services -->
+											    <li class="dropdown"><a href="${ILINK3}">${ITEXT3} <b class="caret"></b></a>
+											        <!-- submenu-wrapper -->
+											        <div class="submenu-wrapper submenu-wrapper-topbottom">
+											            <div class="submenu-inner  submenu-inner-topbottom">
+											                <ul class="dropdown-menu">
+											                    <li><a href="${ILINK3}">${ITEXT3}</a></li>
+											                    <li><a href="${ILINK3}">${ITEXT3}</a></li>
+											                </ul>
+											            </div>
+											        </div>
+											        <!-- /submenu-wrapper -->
+											    </li>
+											<!-- /Services -->
+
+											<!-- Blog -->
+											    <li class="dropdown"><a href="${ILINK4}">${ITEXT4} <b class="caret"></b></a>
+											        <!-- submenu-wrapper -->
+											        <div class="submenu-wrapper submenu-wrapper-topbottom">
+											            <div class="submenu-inner  submenu-inner-topbottom">
+											                <ul class="dropdown-menu">
+											                    <li><a href="${ILINK4}">${ITEXT4}</a></li>
+											                    <li><a href="${ILINK4}">${ITEXT4}</a></li>
+											                </ul>
+											            </div>
+											        </div>
+											        <!-- /submenu-wrapper -->
+											    </li>
+											<!-- /Blog -->
+											<li><a href="${ILINK5}">${ITEXT5}</a></li>
+											<li><a href="${ILINK6}">${ITEXT6}</a></li>
+										</ul>
+									</div><!-- /.navbar-collapse -->
+									
+							</nav>
+						</div><!-- /.container -->
+					</header>
+
+                    <div id="main-carousel" class="carousel slide hero-slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#main-carousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/banniere.jpg" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">APPELEZ-NOUS AUJOURD'HUI</small>
+                                        <div class="phone animated lightSpeedIn"><a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a></div>
+                                        <h1 class="animated lightSpeedIn">${title1} <br>${title2}</h1>
+
+                                        <p class="lead animated lightSpeedIn">${desc1}</p>
+
+                                        <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
+                                </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="item">
+                                <img src="img/banniere.jpg" alt="Hero Slide">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+
+                                        <h1 class="animated bounceIn">${title3} <br>${title4}</h1>
+
+                                        <p class="lead animated lightSpeedIn">${desc2}</p>
+
+                                        <a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
+                                    </div>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+                        </div>
+                        <!--.carousel-inner-->
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- #main-carousel-->
+
+			        
+
+			        <!-- About-us-wrap -->	
+			        <section class="section-padding">
+			        	<div class="container">
+			        		<div class="row">
+								<div class="col-sm-4 col-xs-12 about-us-wrap">
 								</div>
-							</div>
-							<div data-thumb="" data-src="images/slides/blank.gif">
-								<div class="img-responsive camera_caption fadeFromBottom">
-									<h2>
-										<img src="images/TELicon.png">
-                						<a class="" href="tel:${tel.}" role="button">${tel.}</a>
-									</h2>
+			        			<div class="col-sm-4 col-xs-12">
+			        				<div class="about-us-content">
+			        					<h3>${title15}</h3>
+			        					<div class="about-content-block">
+				        					<span>${title16}</span>
+				        					<p>${desc8}</p>
+			        					</div>
+			        					<br>
+			        					<div class="about-content-block">
+				        					<span>${title17}</span>
+				        					<p>${desc9}</p>
+			        					</div>
+			        				</div><!-- /about-us-content -->
+			        			</div><!--/.col-->
+
+			        			<div class="col-sm-4 col-xs-12">
+			        				<div class="about-us-content">
+			        					<h3>${title18}</h3>
+			        					<div class="about-content-block">
+				        					<span>${title19}</span>
+				        					<p>${desc10}</p>
+			        					</div>
+			        					<br>
+			        					<div class="about-content-block">
+				        					<span>${title20}</span>
+				        					<p>${desc10}</p>
+			        					</div>
+			        				</div><!-- /about-us-content -->
+			        			</div><!-- /.col-->
+
+			        			<!--<div class="col-sm-4 col-xs-12">
+			        				<div class="about-us-content capabilities">
+			        					<div class="about-content-block">
+				        					<h3>Nos capacités</h3>
+				        					<ul>
+				        						<li>${title21}</li>
+				        						<li>${title22}</li>
+				        						<li>${title23}</li>
+				        						<li>${title24}</li>
+				        						<li>${title25}</li>
+				        					</ul>
+			        					</div>
+			        					
+			        				</div> /about-us-content 
+			        			</div>-->
+								<!--/.col-->
+			        		</div><!-- /.row -->
+			        	</div><!-- /.container -->
+
+			        </section>
+			        <!-- /About-us-wrap -->
+<!-- services start -->
+					<section class="service-wrap">
+						
+						<!-- Controls will work for desktop and large devices -->
+					  	<div class="slider-control hidden-sm hidden-xs">
+							<a class="left carousel-control" href="#service-carousel" role="button" data-slide="prev">
+							    <span class="flaticon-previous11" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#service-carousel" role="button" data-slide="next">
+							    <span class="flaticon-next15" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div><!--/.slider-control -->
+
+			            <div class="container">
+			              	<div class="row">
+			              		<div class="col-md-4 col-sm-12">
+			              			<div class="service-left-box">
+						              	<div class="section-heading">
+						                  <h2 class="section-title">${title5}</h2>
+						                  <span class="section-sub">${title6}</span>
+						                </div> <!--section-header-->
+
+						                <div class="service-intro">
+						                	 <p>${desc3}</p>
+						                </div><!--/.service-intro-->
+					                </div><!-- /.service-left-box -->
+				               </div><!-- /.col -->
+				               <div class="col-md-8 col-sm-12">
+				              		<div id="service-carousel" class="carousel slide">
+				              			<!-- Controls
+				              			will work for small devices -->
+				              			
+									  	<div class="slider-control visible-sm visible-xs">
+											<a class="left carousel-control" href="#service-carousel" role="button" data-slide="prev">
+											    <span class="flaticon-previous11" aria-hidden="true"></span>
+											    <span class="sr-only">Previous</span>
+											</a>
+											<a class="right carousel-control" href="#service-carousel" role="button" data-slide="next">
+											    <span class="flaticon-next15" aria-hidden="true"></span>
+											    <span class="sr-only">Next</span>
+											</a>
+										</div><!--/.slider-control -->
+
+									  <!-- Wrapper for slides -->
+									  	<div class="carousel-inner" role="listbox">
+									    	<div class="item active">
+									    		<div class="row">
+									    			<div class="col-sm-6 col-xs-12">
+											    		<div class="service-content">
+												    		<h3>${title7}<br><span>${title8}</span></h3>
+												    		<div class="service-thumb">
+												    			<img class="focus img-responsive" src="img/apple-touch-icon-152x152.png" alt="image"/>
+												    		</div>	
+												    		<p>${desc4}</p>
+												    		<a class="btn btn-primary" href="#">Continuer la lecture<i class="fa fa-long-arrow-right"></i></a>
+											    		</div><!-- /.service-content -->
+										    		</div><!--/.col -->
+											    	<div class="col-sm-6 col-xs-12">
+												    	<div class="service-content">
+												    		<h3>${title9}<br><span>${title10}</span></h3>
+												    		<div class="service-thumb">
+												    			<img class="focus img-responsive" src="img/apple-touch-icon-152x152.png" alt="image"/>
+												    		</div>	
+												    		<p>${desc5}</p>
+												    		<a class="btn btn-primary" href="#">Continuer la lecture<i class="fa fa-long-arrow-right"></i></a>
+												    	</div><!-- /.service-content -->
+											    	</div><!--/.col-->
+									    		</div>
+									    	</div><!--/.item -->
+									    	<div class="item">
+										    	<div class="row">
+										    		<div class="col-sm-6 col-xs-12">
+												    	<div class="service-content">
+												    		<h3>${title11}<br><span>${title12}</span></h3>
+												    		<div class="service-thumb">
+												    			<img class="img-responsive" src="img/apple-touch-icon-152x152.png" alt="image"/>
+												    		</div>	
+												    		<p>${desc6}</p>
+												    		<a class="btn btn-primary" href="#">Continuer la lecture<i class="fa fa-long-arrow-right"></i></a>
+												    	</div><!-- /.service-content -->
+											    	</div><!--/.col-->
+											    	<div class="col-sm-6 col-xs-12">
+												    	<div class="service-content">
+												    		<h3>${title13}<br><span>${title14}</span></h3>
+												    		<div class="service-thumb">
+												    			<img class="img-responsive" src="img/apple-touch-icon-152x152.png" alt="image"/>
+												    		</div>	
+												    		<p>${desc7}</p>
+												    		<a class="btn btn-primary" href="#">Continuer la lecture<i class="fa fa-long-arrow-right"></i></a>
+												    	</div><!-- /.service-content -->
+											    	</div><!--/.col-->
+										    	</div><!--/.row-->
+									    	</div><!--/.item-->
+									    
+										</div>
+									</div><!-- /.carousel -->
+				               </div><!--/.col-->
+			                </div><!-- /.row -->
+			            </div><!-- /.container -->
+			        </section>
+			        <!-- services end -->
+			        <!-- Pricing-wrap start -->
+			        <section class="pricing-wrap section-padding" style="background: lightseagreen;">
+			        	<div class="container">
+			        		<div class="section-heading">
+			                  <h2 class="section-title">${title51}</h2>
+				        	</div>
+				        	
+			        		<div class="row">
+			        			<div class="col-xs-12 col-sm-6 col-md-3">
+			        				<div class="no-padding">
+				        				<div class="pricing-table first-col">
+				        					<div class="pricing-header">
+				        						<div class="pricing-title">
+				        							${title52}
+				        						</div>
+				        						<div class="pricing-price">
+				        						<a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a>
+				        						</div>
+				        					</div><!-- /.pricing-header -->
+				        					<div class="pricing-desc pricing-cell">
+				        						${title53}
+				        					</div>
+				        				</div><!-- /.pricing-table -->
+			        				</div><!-- /.no-padding -->
+			        			</div><!-- /.col -->
+
+			        			<div class="col-xs-12 col-sm-6 col-md-3">
+			        				<div class="no-padding">
+				        				<div class="pricing-table second-col">
+				        					<div class="pricing-header">
+				        						<div class="pricing-title">
+				        							${title54}
+				        						</div>
+				        						<div class="pricing-price">
+				        						<a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a>
+				        						</div>
+				        					</div><!-- /.pricing-header -->
+				        					<div class="pricing-desc pricing-cell">
+				        						${title55}
+				        					</div>
+				        				</div><!-- /.pricing-table -->
+			        				</div><!-- /.no-padding -->
+
+			        			</div><!-- /.col -->
+
+			        			<div class="col-xs-12 col-sm-6 col-md-3">
+			        				<div class="no-padding">
+				        				<div class="pricing-table third-col">
+				        					<div class="pricing-header">
+				        						<div class="pricing-title">
+				        							${title56}
+				        						</div>
+				        						<div class="pricing-price">
+				        						<a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a>
+				        						</div>
+				        					</div><!-- /.pricing-header -->
+				        					<div class="pricing-desc pricing-cell">
+				        						${title57}
+				        					</div>
+				        				</div><!-- /.pricing-table -->
+			        				</div><!-- /.no-padding -->
+
+			        			</div><!-- /.col -->
+
+			        			<div class="col-xs-12 col-sm-6 col-md-3">
+			        				<div class="no-padding">
+				        				<div class="pricing-table fourth-col">
+				        					<div class="pricing-header">
+				        						<div class="pricing-title">
+				        							${title58}
+				        						</div>
+				        						<div class="pricing-price">
+				        						<a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a>
+				        						</div>
+				        					</div><!-- /.pricing-header -->
+				        					<div class="pricing-desc pricing-cell">
+				        						${title59}
+				        					</div>
+				        				</div><!-- /.pricing-table -->
+			        				</div><!-- /.no-padding -->
+			        			</div><!-- /.col -->
+
+			        		</div><!-- /.row -->
+
+			        		<div class="row">
+			        			<div class="no-padding">
+				        			<div class="col-xs-12">
+				        				<div class="pricing-footer text-center">
+				        					${title60}
+				        				</div>
+				        			</div>
+			        			</div>
+			        		</div><!--/.row-->
+			        	</div><!-- /.container -->
+
+			        </section>
+			        <!-- Pricing-wrap end -->
+
+			        <!-- footer-widget-section start -->
+			        <section class="footer-widget-section">
+			        	<div class="container">
+			        		<div class="row">
+			        			<div class="col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Sur</h3>
+			        					<p>
+			        						${desc14}
+			        					</p>
+			        					<br>
+
+										<address>
+										  <strong><a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a></strong>
+										  <br>
+										  <a href="#">${email}</a>
+										  <br>
+										  <br>
+										  <span class="map-marker">${ville}<br>${type}</span>
+										</address>
+
+										
+			        				</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-sm-4 -->
+
+			        			<div class="col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Liens utiles</h3>
+			        					<div class="row">
+			        						<div class="col-sm-6">
+					        					<ul class="quick-links">
+					        						<li><a href="${ILINK1}">${ITEXT1}</a></li>
+					        						<li><a href="${ILINK2}">${ITEXT2}</a></li>
+					        						<li><a href="${ILINK3}">${ITEXT3}</a></li>
+					        						<li><a href="${ILINK4}">${ITEXT4}</a></li>
+					        						<li><a href="${ILINK5}">${ITEXT5}</a></li>
+					        						<li><a href="${ILINK6}">${ITEXT6}</a></li>
+					        						<li><a href="${ILINK7}">${ITEXT7}</a></li>
+					        					</ul>
+			        						</div>
+			        						<div class="col-sm-6">
+					        					<ul class="quick-links">
+					        						<li><a href="${ILINK7}">${ITEXT7}</a></li>
+					        						<li><a href="${ILINK8}">${ITEXT8}</a></li>
+					        						<li><a href="${ILINK9}">${ITEXT9}</a></li>
+					        						<li><a href="${ILINK10}">${ITEXT10}</a></li>
+					        						<li><a href="${ILINK11}">${ITEXT11}</a></li>
+					        					</ul>
+			        						</div>
+			        					</div>
+			        				</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+
+			        			<div class="col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Reste en contact</h3>
+			        					<p>Entrez votre adresse email pour recevoir des nouvelles &amp; offres de nous</p>
+
+										<form class="newsletter-form">
+											<div class="form-group">
+												<label class="sr-only" for="InputEmail1">Adresse e-mail</label>
+												<input type="email" class="form-control" id="InputEmail1" placeholder="Votre adresse email">
+												<button type="submit" class="btn">Envoyer &nbsp;<i class="fa fa-angle-right"></i></button>
+											</div>
+										</form>		
+										<ul class="social-links list-inline">
+				  							<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+				  							<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+				  							<li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+				  							<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+						  				</ul>        				
+									</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+			        		</div><!-- /.row -->
+			        	</div><!-- /.container -->
+			        </section><!-- /.cta-section -->
+			        <!-- footer-widget-section end -->
+
+			        <!-- copyright-section start -->
+			        <footer class="copyright-section">
+			        	<div class="container">
+			        		<div class="copyright-info">
+            					<p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="tel:${tel.}" title="${ville} ${type} ${tel.}">${tel.}</a></p>
+			        		</div>
+			        	</div><!-- /.container -->
+			        </footer>
+			        <!-- copyright-section end -->
+	    		</div> <!-- .st-content -->
+		    </div> <!-- .st-pusher -->
+
+	    	<!-- OFFCANVAS MENU -->
+	    	<div class="offcanvas-menu offcanvas-effect">
+	    		<div class="offcanvas-wrap">
+			        <div class="off-canvas-header">
+			        	<button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">&times;</button>
+			        </div>
+			        <ul id ="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
+			            <li class="active"><a href="${ILINK1}">${ITEXT1}<span class="sr-only">(current)</span></a></li>
+			            <li><a href="about.html">About</a></li>
+			            <li>
+			            	<a href="${ILINK2}">${ITEXT2}</a>
+			            	<ul>
+			            		<li>
+			            			<a href="${ILINK2}">${ITEXT2}</a>
+			            		</li>
+			            		<li>
+			            			<a href="${ILINK1}">${ITEXT2}</a>
+			            		</li>
+			            	</ul>
+
+			            </li>
+			            <li><a href="${ILINK3}">${ITEXT3}</a>
+							<ul>
+			            		<li>
+			            			<a href="${ILINK3}">${ITEXT3}</a>
+			            		</li>
+			            		<li>
+			            			<a href="${ILINK3}">${ITEXT3}</a>
+			            		</li>
+			            	</ul>
+			            </li>
+			            <li><a href="${ILINK4}">${ITEXT4}</a></li>
+			            <li><a href="${ILINK5}">${ITEXT5}</a></li>
+			        </ul>
+			        <div class="offcanvas-widgets hidden-sm hidden-xs">
+				        <div id="twitterWidget">
+							<h2>Fil Twitter</h2>				    	
+							<div class="twitter-widget"></div>
+						</div>
+						<div class="newsletter-widget">
+							<h2>Reste en contact</h2>
+							<p>Entrez votre adresse email pour recevoir des nouvelles &amp; offres de nous</p>
+
+							<form class="newsletter-form">
+								<div class="form-group">
+									<label class="sr-only" for="InputEmail1">Adresse e-mail</label>
+									<input type="email" class="form-control" id="InputEmail2" placeholder="Votre adresse email">
+									<button type="submit" class="btn">Envoyer &nbsp;<i class="fa fa-angle-right"></i></button>
 								</div>
-							</div>
-							<div data-thumb="" data-src="images/slides/blank.gif">
-								<div class="img-responsive camera_caption fadeFromBottom">
-									<h2>
-										<img src="images/TELicon.png">
-                						<a class="btn btn-primary" href="tel:${tel.}" role="button">${tel.}</a>
-									</h2>
-								</div>
-							</div>
-						</div>
-						<!-- #camera_wrap_1 -->
+							</form>		
+							       				
+						</div><!-- newsletter-widget -->
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 cBusiness">
-					<h3 class="swing animated">${title5}</h3>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 centPic">
-					<img class="img-responsive" src="images/apple-touch-icon-152x152.png" />
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<!--about start-->
-
-	<div id="about">
-		<div class="line2">
-			<div class="container">
-				<div class="row Fresh">
-					<div class="col-md-4 Des">
-						<i class="fa fa-heart"></i>
-						<h4 class="flip animated">${title6}</h4>
-						<p class="flip animated">${desc6}</p>
-					</div>
-					<div class="col-md-4 Ver">
-						<i class="fa fa-cog"></i>
-						<h4 class="flip animated"${title7}</h4>
-						<p class="flip animated">${desc7}</p>
-					</div>
-					<div class="col-md-4 Fully">
-						<i class="fa fa-tablet"></i>
-						<h4 class="flip animated">${title8}</h4>
-						<p class="flip animated">${desc8}</p>
-					</div>
 				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 wwa">
-					<span name="about"></span>
-					<h3 class="hinge animated">${title9}</h3>
-					<h4 class="hinge animated">${desc9}</h4>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row team">
-				<div class="col-md-4 b1">
-					<img class="img-responsive" src="images/apple-touch-icon-152x152.png">
-					<h5 class="hinge animated">${title10}</h5>
-					<p class="hinge animated">${desc10}</p>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-facebook-square"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-pinterest"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-google-plus-square"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
+	      	</div><!-- .offcanvas-menu -->
+		</div><!-- /st-container -->
 
 
-				<div class="col-md-4">
-					<img class="img-responsive" src="images/apple-touch-icon-152x152.png">
-					<h5 class="hinge animated">${title11}</h5>
-					<p class="hinge animated">${desc11}</p>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-facebook-square"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-pinterest"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-google-plus-square"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-
-				<div class="col-md-4 b3">
-					<img class="img-responsive" src="images/apple-touch-icon-152x152.png">
-					<h5 class="hinge animated">${title12}</h5>
-					<p class="hinge animated">${desc12}</p>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-facebook-square"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-pinterest"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-google-plus-square"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 hr1">
-					<hr/>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 bar">
-					<div class="progB chart" data-percent="83" data-animate="3500">
-						<div class="chart chart-content">
-							<div class="percentage" data-percent="83">
-								<span class="percent">83</span>
-							</div>
-						</div>
-					</div>
-					<div class="textP">
-						<h3 class="hinge animated">${title13}</h3>
-						<p class="hinge animated">${desc13}</p>
-					</div>
-				</div>
-				<div class="col-md-3 bar">
-					<div class="progB chart" data-percent="5" data-animate="3500">
-						<div class="chart chart-content">
-							<div class="percentage" data-percent="5">
-								<span class="percent">5</span>
-							</div>
-						</div>
-					</div>
-					<div class="textP">
-						<h3 class="hinge animated">${title14}</h3>
-						<p class="hinge animated">${desc14}</p>
-					</div>
-				</div>
-				<div class="col-md-3 bar ">
-					<div class="progB chart" data-percent="88" data-animate="3500">
-						<div class="chart chart-content">
-							<div class="percentage" data-percent="88">
-								<span class="percent">88</span>
-							</div>
-						</div>
-					</div>
-					<div class="textP">
-						<h3 class="hinge animated">${title15}</h3>
-						<p class="hinge animated">${desc15}</p>
-					</div>
-				</div>
-				<div class="col-md-3 bar ">
-					<div class="progB chart" data-percent="45" data-animate="3500">
-						<div class="chart chart-content">
-							<div class="percentage" data-percent="45">
-								<span class="percent">45</span>
-							</div>
-						</div>
-					</div>
-					<div class="textP">
-						<h3 class="hinge animated">${title16}</h3>
-						<p class="hinge animated">${desc16}</p>
-					</div>
-				</div>
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">
+				<div class="status-mes"></div>
 			</div>
 		</div>
 
 
-		<div class="container">
-			<div class="row aboutUs">
-				<div class="col-md-12 ">
-					<h3>${title17}</h3>
-				</div>
-			</div>
-		</div>
+	    <!-- jQuery -->
+	    <script src="js/jquery.js"></script>
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="js/bootstrap.min.js"></script>
+		<!-- Scrolling Nav JavaScript -->
+	    <script src="js/jquery.easing.min.js"></script>
+	    
+	    <!-- owl.carousel -->
+	    <script src="owl.carousel/owl.carousel.min.js"></script>
+	    <!-- Magnific-popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Offcanvas Menu -->
+		<script src="js/hippo-offcanvas.js"></script>
+		<!-- stellar -->
+		<script src="js/jquery.stellar.js"></script>
+		<!-- classie -->
+		<script src="js/classie.js"></script>
+		<!-- sticky kit -->
+		<script src="js/jquery.sticky-kit.min.js"></script>
+		<!-- language select -->
+		<script src="js/selectFx.js"></script>
+		<!-- Twitter feed -->
+		<script src="js/twitterFetcher_min.js"></script>
+		<!-- Youtube Video-player -->
+	    <script src="js/jquery.mb.YTPlayer.js"></script>
+	    <!-- Custom Script -->
+	    <script src="js/scripts.js"></script>
 
-		<div style="position: relative;">
-
-			<div class="container">
-				<div class="row about">
-					<div class="col-md-6">
-						<div class="about1">
-							<img class="pic1Ab" src="images/apple-touch-icon-152x152.png">
-							<h3>${title18}</h3>
-							<p>${desc18}</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="about2">
-							<img class="pic2Ab" src="images/apple-touch-icon-152x152.png">
-							<h3>${title19}</h3>
-							<p>${desc19}</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="horL"></div>
-
-			<div class="container">
-				<div class="row about">
-					<div class="col-md-6">
-						<div class="about1">
-							<img class="pic1Ab" src="images/apple-touch-icon-152x152.png">
-							<h3>${title20}</h3>
-							<p>${desc20}</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="about2">
-							<img class="pic2Ab" src="images/apple-touch-icon-152x152.png">
-							<h3>${title21}</h3>
-							<p>${desc21}</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<!--project start-->
-	<div id="project">
-		<div class="line3">
-			<div class="container">
-				<div id="project1"></div>
-				<div class="row Ama">
-					<div class="col-md-12">
-						<span name="projects" id="projectss"></span>
-						<h3>${title22}</h3>
-						<p>${desc22}</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container">
-
-			<script type="text/javascript">
-				jQuery(window).load(function () {
-					items_set = [
-
-						{ category: 'branding', lika_count: '77', view_count: '234', src: 'images/apple-touch-icon-152x152.png', title: 'Groom pour porte', content: '' },
-
-						{ category: 'polygraphy', lika_count: '45', view_count: '100', src: 'images/apple-touch-icon-152x152.png', title: 'Groom sol pour porte', content: '' },
-
-						{ category: 'text_styles', lika_count: '22', view_count: '140', src: 'images/apple-touch-icon-152x152.png', title: 'Cornieres anti-pince', content: '' }
-
-
-					];
-					jQuery('.portfolio_block').portfolio_addon({
-						type: 1, // 2-4 columns simple portfolio
-						load_count: 3,
-
-						items: items_set
-					});
-					$('#container').isotope({
-						animationOptions: {
-							duration: 900,
-							queue: false
-						}
-					});
-				});
-			</script>
-		</div>
-	</div>
-
-	<!--news start-->
-
-	<div id="news">
-		
-		<div class="container">
-			<div class="row news">
-				<div class="col-md-6  text-left" style="text-align: -webkit-center;">
-					<img class="img-responsive picsGall" src="images/apple-touch-icon-152x152.png" />
-					<h3>
-						<a href="#">${title36}</a>
-					</h3>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-folder-open"></i>Staff</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-comments"></i>17 comments</a>
-						</li>
-					</ul>
-					<p>${desc27}</i>
-						</a>
-					</p>
-					<hr class="hrNews">
-				</div>
-				<div class="col-md-6 text-right" style="text-align: -webkit-center;">
-					<img class="img-responsive picsGall" src="images/apple-touch-icon-152x152.png" />
-					<h3>
-						<a href="#">${title37}</a>
-					</h3>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-folder-open"></i>Staff</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-comments"></i>29 comments</a>
-						</li>
-					</ul>
-					<p>${desc28}</i>
-						</a>
-					</p>
-					<hr class="hrNews">
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row news2 news">
-				<div class="col-md-6 text-left" style="text-align: -webkit-center;">
-					<img class="img-responsive picsGall" src="images/apple-touch-icon-152x152.png" />
-					<h3>
-						<a href="#">${title38}</a>
-					</h3>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-folder-open"></i>Staff</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-comments"></i>142 comments</a>
-						</li>
-					</ul>
-						<p>${desc29}</i>
-						</a>
-					</p>
-					<hr class="hrNews">
-				</div>
-				<div class="col-md-6 text-right" style="text-align: -webkit-center;">
-					<img class="img-responsive picsGall" src="images/apple-touch-icon-152x152.png" />
-					<h3>
-						<a href="#">${title39}</a>
-					</h3>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-folder-open"></i>Staff</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-comments"></i>17 comments</a>
-						</li>
-					</ul>
-					<p>${desc30}</i>
-						</a>
-					</p>
-					<hr class="hrNews">
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row news2 news">
-				<div class="col-md-6 text-left" style="text-align: -webkit-center;">
-					<img class="img-responsive picsGall" src="images/apple-touch-icon-152x152.png" />
-					<h3>
-						<a href="#">${title40}</a>
-					</h3>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-folder-open"></i>Staff</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-comments"></i>17 comments</a>
-						</li>
-					</ul>
-					<p>${desc31}</i>
-						</a>
-					</p>
-					<hr class="hrNews">
-				</div>
-				<div class="col-md-6 text-right" style="text-align: -webkit-center;">
-					<img class="img-responsive picsGall" src="images/apple-touch-icon-152x152.png" />
-					<h3>
-						<a href="#">${title39}</a>
-					</h3>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-folder-open"></i>Staff</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-comments"></i>17 comments</a>
-						</li>
-					</ul>
-					<p>${desc32}</i>
-						</a>
-					</p>
-					<hr class="hrNews">
-				</div>
-			</div>
-		</div>
-
-
-
-		<div class="container hideObj2" style="display:none;">
-			<div class="row news2 news">
-				<div class="col-md-6 text-right" style="text-align: -webkit-center;">
-					<img class="img-responsive picsGall" src="images/apple-touch-icon-152x152.png" />
-					<h3>
-						<a href="#">${title40}</a>
-					</h3>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-folder-open"></i>Staff</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-comments"></i>42 comments</a>
-						</li>
-					</ul>
-					<p>${desc33}</i>
-						</a>
-					</p>
-					<hr class="hrNews">
-				</div>
-				<div class="col-md-6 text-left" style="text-align: -webkit-center;">
-					<img class="img-responsive picsGall" src="images/apple-touch-icon-152x152.png" />
-					<h3>
-						<a href="#">${title41}</a>
-					</h3>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-folder-open"></i>Staff</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-comments"></i>17 comments</a>
-						</li>
-					</ul>
-					<p>${desc34}</i>
-						</a>
-					</p>
-					<hr class="hrNews">
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row cBtn">
-				<div class="col-md-12" style="text-align: center; margin-bottom: -90px; z-index: 10;">
-					<ul class="mNews">
-						<li class="dowbload bhide2">
-							<a href="#">
-								<i class="fa fa-arrow-down"></i>Charger plus de nouvelles</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<!--contact start-->
-
-	<div id="contact">
-		
-		<div class="line6">
-			<!-- <div id="map"></div> -->
-			<iframe width="100%" height="750" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBZMkMxl3Ck4-5NqEkJCGophP3KMyR5I2w
-				  &q=Paris" allowfullscreen>
-			</iframe>
-			<!-- api key = AIzaSyBZMkMxl3Ck4-5NqEkJCGophP3KMyR5I2w -->
-			<!-- <div id="map-canvas"></div> -->
-			<!-- <iframe src="https://www.google.com/maps/embed/v1/place?q=Paris, France&amp;key=" width="100%" height="750" frameborder="0" style="border:0"></iframe>  -->
-			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d48386.401887313725!2d-73.9407136!3d40.7147117!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1402409149092" width="100%" height="750" frameborder="0" style="border:0"></iframe>			 -->
-		</div>
-		<div class="line7">
-			<div class="container">
-				<div class="row footer">
-					<div class="col-md-12">
-						<h3>Inscrivez vous à notre "Newsletter"</h3>
-						<p>recevez des offres et des informations de notre entreprise sur la protection et la sécurité de vos lieux de travail
-							et lieu de vie</p>
-						<div class="fr">
-							<div style="display: inline-block;">
-								<input class="col-md-6 fEmail" name='Email' placeholder='Entrer votre Email' />
-								<a href="#" class="subS">S'inscrire!</a>
-							</div>
-						</div>
-					</div>
-					<div class="soc col-md-12">
-						<ul>
-							<li class="soc1">
-								<a href="#"></a>
-							</li>
-							<li class="soc2">
-								<a href="#"></a>
-							</li>
-							<li class="soc3">
-								<a href="#"></a>
-							</li>
-							<li class="soc4">
-								<a href="#"></a>
-							</li>
-							<li class="soc5">
-								<a href="#"></a>
-							</li>
-							<li class="soc6">
-								<a href="#"></a>
-							</li>
-							<li class="soc7">
-								<a href="#"></a>
-							</li>
-							<li class="soc8">
-								<a href="#"></a>
-							</li>
-
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="lineBlack">
-			<div class="container">
-				<div class="row downLine">
-					<div class="col-md-12 text-right">
-						<!--input  id="searchPattern" type="search" name="pattern" value="Search the Site" onblur="if(this.value=='') {this.value='Search the Site'; }" onfocus="if(this.value =='Search the Site' ) this.value='';this.style.fontStyle='normal';" style="font-style: normal;"/-->
-						<input id="searchPattern" type="search" placeholder="Recherche dans le site" />
-						<i class="glyphicon glyphicon-search" style="font-size: 13px; color:#a5a5a5;" id="iS"></i>
-					</div>
-					<div class="col-md-6 text-left copy">
-            			<p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="tel:${tel.}" title="${ville} ${type} ${tel.}">${tel.}</a></p>
-					</div>
-					<div class="col-md-6 text-right dm">
-						<ul id="downMenu">
-							<li class="active">
-								<a href="${ILINK1}">${ITEXT1}</a>
-							</li>
-							<li>
-								<a href="${ILINK2}">${ITEXT2}</a>
-							</li>
-							<li>
-								<a href="${ILINK3}">${ITEXT3}</a>
-							</li>
-							<li>
-								<a href="${ILINK4}">${ITEXT4}</a>
-							</li>
-							<li class="last">
-								<a href="${ILINK5}">${ITEXT5}</a>
-							</li>
-							<!--li><a href="#features">Features</a></li-->
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.slicknav.js"></script>
-	<script>
-		$(document).ready(function () {
-			$(".bhide").click(function () {
-				$(".hideObj").slideDown();
-				$(this).hide(); //.attr()
-				return false;
-			});
-			$(".bhide2").click(function () {
-				$(".container.hideObj2").slideDown();
-				$(this).hide(); // .attr()
-				return false;
-			});
-
-			$('.heart').mouseover(function () {
-				$(this).find('i').removeClass('fa-heart-o').addClass('fa-heart');
-			}).mouseout(function () {
-				$(this).find('i').removeClass('fa-heart').addClass('fa-heart-o');
-			});
-
-			function sdf_FTS(_number, _decimal, _separator) {
-				var decimal = (typeof (_decimal) != 'undefined') ? _decimal : 2;
-				var separator = (typeof (_separator) != 'undefined') ? _separator : '';
-				var r = parseFloat(_number)
-				var exp10 = Math.pow(10, decimal);
-				r = Math.round(r * exp10) / exp10;
-				rr = Number(r).toFixed(decimal).toString().split('.');
-				b = rr[0].replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g, "\$1" + separator);
-				r = (rr[1] ? b + '.' + rr[1] : b);
-
-				return r;
-			}
-
-			setTimeout(function () {
-				$('#counter').text('0');
-				$('#counter1').text('0');
-				$('#counter2').text('0');
-				setInterval(function () {
-
-					var curval = parseInt($('#counter').text());
-					var curval1 = parseInt($('#counter1').text().replace(' ', ''));
-					var curval2 = parseInt($('#counter2').text());
-					if (curval <= 707) {
-						$('#counter').text(curval + 1);
-					}
-					if (curval1 <= 12280) {
-						$('#counter1').text(sdf_FTS((curval1 + 20), 0, ' '));
-					}
-					if (curval2 <= 245) {
-						$('#counter2').text(curval2 + 1);
-					}
-				}, 2);
-
-			}, 500);
-		});
-	</script>
-	<script type="text/javascript">
-		jQuery(document).ready(function () {
-			jQuery('#menu').slicknav();
-
-		});
-	</script>
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			var $menu = $("#menuF");
-
-			$(window).scroll(function () {
-				if ($(this).scrollTop() > 100 && $menu.hasClass("default")) {
-					$menu.fadeOut('fast', function () {
-						$(this).removeClass("default")
-							.addClass("fixed transbg")
-							.fadeIn('fast');
-					});
-				} else if ($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
-					$menu.fadeOut('fast', function () {
-						$(this).removeClass("fixed transbg")
-							.addClass("default")
-							.fadeIn('fast');
-					});
-				}
-			});
-		});
-    //jQuery
-	</script>
-	<script>
-		/*menu*/
-		function calculateScroll() {
-			var contentTop = [];
-			var contentBottom = [];
-			var winTop = $(window).scrollTop();
-			var rangeTop = 200;
-			var rangeBottom = 500;
-			$('.navmenu').find('a').each(function () {
-				contentTop.push($($(this).attr('href')).offset().top);
-				contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
-			})
-			$.each(contentTop, function (i) {
-				if (winTop > contentTop[i] - rangeTop && winTop < contentBottom[i] - rangeBottom) {
-					$('.navmenu li')
-						.removeClass('active')
-						.eq(i).addClass('active');
-				}
-			})
-		};
-
-		$(document).ready(function () {
-			calculateScroll();
-			$(window).scroll(function (event) {
-				calculateScroll();
-			});
-			$('.navmenu ul li a').click(function () {
-				$('html, body').animate({ scrollTop: $(this.hash).offset().top - 80 }, 800);
-				return false;
-			});
-		});		
-	</script>
-	<script type="text/javascript" charset="utf-8">
-
-		jQuery(document).ready(function () {
-			jQuery(".pretty a[rel^='prettyPhoto']").prettyPhoto({ animation_speed: 'normal', theme: 'light_square', slideshow: 3000, autoplay_slideshow: true, social_tools: '' });
-
-		});
-	</script>
-
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-	<script src="validator.js"></script>
-	
-	<script type="text/javascript">
-		$(function () {
-			$('.sent').hide();
-			
-			$('#contact-submit').validator();
-			$('#contact-submit').click(function () {
-				var recaptcha = $("#g-recaptcha-response").val();
-				var subject = $('#contact-subject').val();
-				var message = 'My name is: ' + $('#contact-name').val() +
-					'\nMy Email: ' + $('#contact-email').val() +
-					'\nMy Phone Number: ' + $('#contact-phone').val() +
-					'\nMessage: ' + $('#contact-message').val();
-
-				var data = {
-					"subject": subject,
-					"body": message,
-					"g-recaptcha-response": recaptcha
-				};
-
-				$.ajax({
-					type: 'POST',
-					url: 'contact/',
-					data: JSON.stringify(data),
-					contentType: 'application/json',
-					dataType: 'json',
-					error: function (err) {
-						console.log(err);
-						// $(".message").text(returnval + " failure");
-						// $(".message").fadeIn("slow");
-						// $(".message").delay(2000).fadeOut(1000);
-					},
-					success: function (res) {
-						console.log()
-						$('.sent').show();
-						$('#contact-form').hide();
-					}
-				});
-
-			});
-		});
-	</script>
-			
-</body>
-
+	</body>
 </html>

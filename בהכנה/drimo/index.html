@@ -2,13 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Drimo</title>
+    <!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="Aisraeli">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>${title}</title>
+
+	<meta charset="utf-8">
+
+	<meta name="dcterms.creator" content="${mainUrl}">
+	<meta name="dcterms.subject" content="${Type}">
+	<meta name="dcterms.description" content="${ville}">
+	<meta name="description" content="${description}">
+	<meta name="geo.region" content="${regionId}">
+	<meta name="dcterms.title" content="${title}">
+	<meta name="geo.placename" content="${ville}">
+	<meta name="geo.position" content="${latitude};${longitude}">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,100" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <!--    favicon-->
-    <link rel="shortcut icon" href="image/fav-icon.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="image/fav-icon.png" type="image/x-icon"> -->
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -31,16 +51,15 @@
             <div class="container">
                 <div class="row">
                     <div class="hero-text">
-                        <h1>Drimo</h1>
+                        <h1>${title}</h1>
                         <div id="typed-strings">
-                            <h3>Drimo App Landing Page Template</h3>
-                            <h3>Drimo Android Template</h3>
-                            <h3>Drimo Apple iso</h3>
+                            <h3>${title1}</h3>
+                            <h3>${title2}</h3>
+                            <h3>${title3}</h3>
                         </div>
                         <h3><span id="typed"></span></h3>
-                        <h4>A Complete Landing Page and Multipurpose Package</h4>
-                        <a href="#" class="btn view-demo" data-scroll-nav="1">View Demos</a>
-                        <a href="#" class="btn buy-now">Buy Drimo</a>
+                        <h4><a href="tel:${tel.}" role="button" class="btn btn-primary">${tel.}</a></h4>
+                        <a href="#" class="btn view-demo" data-scroll-nav="1">Montre plus...</a>
                     </div>
                 </div>
             </div>
