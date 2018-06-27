@@ -116,7 +116,7 @@
   }
 }
 
-.flash {
+.flash:hover {
   -webkit-animation-name: flash;
   animation-name: flash;
 }
